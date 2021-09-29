@@ -37,5 +37,5 @@
 
 ## 🚀 Demo 
 <a href="https://het-patel99.github.io/cheapBuy" target="blank">
-  <img src="https://img.shields.io/website?url=https%3A%2F%2Fhet-patel99.github.io%2FcheapBuy&logo=github&style=flat-square" />
+  <img src="link of our extension" />
 </a>
