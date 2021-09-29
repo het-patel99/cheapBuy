@@ -42,4 +42,23 @@
 Try the tool: cheapBuy](link of our extension)
 
 ## 🧐 Features
+- **Price Comparison**
+- **Feature 2**
 
+## 🛠️ Installation Steps
+
+1. Clone the repository
+2. 
+
+
+
+🌟 You are all set!
+
+## 🍰 Contributing
+Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/het=patel99/cheapBuy/compare).
+
+Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
+
+
+## 💻 Built with
+- [Javascript]
