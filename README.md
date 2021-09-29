@@ -40,7 +40,7 @@
   <img src="https://img.shields.io/website?url=------link-of-our-extension---------------r&logo=github&style=flat-square" />
 </a>
 <p>
-Try the tool: cheapBuy](link of our extension)
+Try the tool: [cheapBuy](link of our extension)
 </p>
 
 ## 🧐 Features
