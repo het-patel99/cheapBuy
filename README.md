@@ -39,6 +39,7 @@
 <a href="https://het-patel99.github.io/cheapBuy" target="blank">
   <img src="https://img.shields.io/website?url=------link-of-our-extension---------------r&logo=github&style=flat-square" />
 </a>
+.
 Try the tool: cheapBuy](link of our extension)
 
 ## 🧐 Features
