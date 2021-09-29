@@ -34,3 +34,7 @@
     ·
     <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Request Feature</a>
 </p>
+
+## 🚀 Demo 
+<a href="https://het-patel99.github.io/cheapBuy" target="blank">
+</a>
