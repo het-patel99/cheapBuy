@@ -21,6 +21,10 @@
 <a href="https://github.com/het-patel99/cheapBuy/issues" target="blank">
 <img src="https://img.shields.io/github/issues/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy issues"/>
 </a>
+  
+  <a href="https://github.com/het-patel99/cheapBuy/issues" target="blank">
+<img src="https://img.shields.io/github/issues-closed/het-patel99/cheapBuy" alt="cheapBuy issues closed"/>
+</a>
 <a href="https://github.com/het-patel99/cheapBuy/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy pull-requests"/>
 </a>
@@ -32,6 +36,9 @@
   
   <a href="https://github.com/sal0ni/cheapBuy/graphs/commit-activity" alt="commit activity">
  <img src="https://img.shields.io/github/commit-activity/w/het-patel99/cheapBuy" /></a> 
+  
+  <a href="https://github.com/sal0ni/cheapBuy/discussions" alt="discussion">
+ <img src="https://img.shields.io/github/discussions/het-patel99/cheapBuy" /></a> 
   
  <a href="https://img.shields.io/github/repo-size/het-patel99/cheapBuy" alt="repo size">
  <img src="https://img.shields.io/github/repo-size/het-patel99/cheapBuy" /></a>
