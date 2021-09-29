@@ -24,6 +24,8 @@
 <a href="https://github.com/het-patel99/cheapBuy/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy pull-requests"/>
 </a>
+  ![Hits](https://hitcounter.pythonanywhere.com/count/tag.svg?url =https://github.com/het-patel99/cheapBuy/)
+
 </p>
 
 <!--working of extension gif-->
