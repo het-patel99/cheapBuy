@@ -6,6 +6,7 @@
 <h1 align="center">
   cheapBuy
 </h1>
+
 <!--Badges-->
 <p align="center">
 <a href="https://github.com/het-patel99/cheapBuy/blob/master/LICENSE" target="blank">
@@ -25,4 +26,11 @@
 </a>
 </p>
 
+<!--working of extension gif-->
+<p align="center"><img src="images/cheapBuy.gif" alt="cheapBuy gif" /></p>
 
+<p align="center">
+    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
+    ·
+    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Request Feature</a>
+</p>
