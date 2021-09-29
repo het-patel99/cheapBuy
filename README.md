@@ -24,6 +24,8 @@
 <a href="https://github.com/het-patel99/cheapBuy/pulls" target="blank">
 <img src="https://img.shields.io/github/issues-pr/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy pull-requests"/>
 </a>
+ <a href="https://github.com/het-patel99/cheapBuy/graphs/contributors" alt="Contributors">
+ <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
 </p>
 
 <!--working of extension gif-->
