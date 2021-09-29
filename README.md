@@ -30,7 +30,7 @@
 <p align="center"><img src="images/cheapBuy.gif" alt="cheapBuy gif" /></p>
 
 <p align="center">
-    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/rahuldkjain/github-profile-readme-generator/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Request Feature</a>
 </p>
