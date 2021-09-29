@@ -7,6 +7,12 @@
   cheapBuy
 </h1>
 
+---
+
+**cheapBuy Extension** provides you ease to buy any product through your favourite website's like Amazon, Walmart, Ebay, Bjs, Costco, etc, by providing prices of the same product from all different websites to extension. It takes lot of time to search for the same product in different websites, and find the cheapest one, instead just add our extension **cheapBuy** and it will automatically fetch you price of the same product from different websites and you can directly compare the prices from different websites through our extension. In sum, **cheapBuy** is an one stop solution to buy the cheapest product online.
+
+---
+
 <!--Badges-->
 <p align="center">
 <a href="https://github.com/het-patel99/cheapBuy/blob/master/LICENSE" target="blank">
@@ -51,9 +57,9 @@ Try the tool: [cheapBuy](link of our extension)
 
 ## 🛠️ Installation Steps
 
-1. Clone the repository
-2. 
-
+1. Clone this github repository
+2. Run requirement.txt file.
+3. 
 
 
 🌟 You are all set!
@@ -65,4 +71,4 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 
 ## 💻 Built with
-- [Javascript]
+- [Javascript][python][html][css]
