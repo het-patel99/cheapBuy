@@ -25,7 +25,21 @@
 <img src="https://img.shields.io/github/issues-pr/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy pull-requests"/>
 </a>
  <a href="https://github.com/het-patel99/cheapBuy/graphs/contributors" alt="Contributors">
- <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
+ <img src="https://img.shields.io/github/contributors/het-patel99/cheapBuy" /></a>
+  
+  <a href="https://github.com/sal0ni/cheapBuy/milestones" alt="milestones">
+ <img src="https://img.shields.io/github/milestones/all/het-patel99/cheapBuy" /></a> 
+  
+  <a href="https://github.com/sal0ni/cheapBuy/graphs/commit-activity" alt="commit activity">
+ <img src="https://img.shields.io/github/commit-activity/w/het-patel99/cheapBuy" /></a> 
+  
+ <a href="https://img.shields.io/github/repo-size/het-patel99/cheapBuy" alt="repo size">
+ <img src="https://img.shields.io/github/repo-size/het-patel99/cheapBuy" /></a>
+  
+  <a href="https://img.shields.io/tokei/lines/github/het-patel99/cheapBuy" alt="repo size">
+ <img src="https://img.shields.io/tokei/lines/github/het-patel99/cheapBuy" /></a> 
+  
+  
 </p>
 
 <!--working of extension gif-->
