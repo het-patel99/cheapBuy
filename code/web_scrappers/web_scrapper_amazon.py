@@ -23,18 +23,16 @@ def scrap_amazon(driver, search_term):
 
 def extract_item_amazon(driver, search_term):
 	result={}
-	try:
-		results = scrap_amazon(driver, search_term)
-		if len(results) == 0:
-			return result 
-		item=results[0]
-		atag = item.h2.a
-		result['description'] = atag.text.strip()
-		result['url'] = 'https://www.amazon.com'+atag.get('href')
-		price_parent = item.find('span', 'a-price')
-		result['price'] = price_parent.find('span', 'a-offscreen').text.strip('$')
-		result['site'] = 'amazon'
-	except:
-		result = {}
+
+	results = scrap_amazon(driver, search_term)
+	if len(results) == 0:
+		return result
+	item=results[0]
+	atag = item.h2.a
+	result['description'] = atag.text.strip()
+	result['url'] = 'https://www.amazon.com'+atag.get('href')
+	price_parent = item.find('span', 'a-price')
+	result['price'] = price_parent.find('span', 'a-offscreen').text.strip('$')
+	result['site'] = 'amazon'
 	return result
 
