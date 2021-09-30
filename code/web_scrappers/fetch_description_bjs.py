@@ -1,6 +1,7 @@
 def description_from_url_bjs(link):
-    remove_initial = link.strip("https://www.bjs.com/product/")
+    remove_initial = link.replace("https://www.bjs.com/product/","")
     description = ''
+    print(remove_initial)
     for i in remove_initial:
         if(i!="/"):
             description += i
