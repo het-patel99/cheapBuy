@@ -53,7 +53,8 @@ Try the tool: [cheapBuy](link of our extension)
 
 ## 🧐 Features
 - **Price Comparison**
-- **Feature 2**
+- **Get alternative website for the product**
+- **Feature 3**
 
 ## 🛠️ Installation Steps
 
