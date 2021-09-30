@@ -17,11 +17,11 @@
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing| 3| The demo video and repository homepage (README) shows this (https://github.com/het-patel99/cheapBuy/blob/main/README.md)|
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3 | CHEAPBUY_DEMO.mp4 as attached in the README.md in the repository. (https://github.com/het-patel99/cheapBuy/blob/main/README.md)|
 | Use of version control tools| 3| Git is used thorougly in the project (https://github.com/het-patel99/cheapBuy)|
-| Use of  style checkers |3 |config files in GH showing your config (https://github.com/ineelshah/SRIJAS/blob/main/.github/workflows/style_checker.yml)|
-| Use of code  formatters. | 3|config files in GH showing your this formatter's  config (https://github.com/ineelshah/SRIJAS/blob/main/.github/workflows/code_formatter.yml)|
-| Use of syntax checkers| 3 |config files in  GH showing this checker's config (https://github.com/ineelshah/SRIJAS/blob/main/.github/workflows/main.yml)|
+| Use of  style checkers |3 | |
+| Use of code  formatters. | 3| |
+| Use of syntax checkers| 3 | |
 | Use of code coverage | 0| Not yet implemented|
-| other automated analysis tools| 3|config files in GH (https://github.com/ineelshah/SRIJAS/blob/main/.github/workflows/close_as_a_feature.yml) and (https://github.com/ineelshah/SRIJAS/blob/main/.github/workflows/Respost.yml)|
+| other automated analysis tools| 3| |
 | test cases exist| 3 | a lot of test cases exist but not covering all the functionalities. To be added soon.|
 | test cases are routinely executed| 2 | Github actions and travis CI both are conducting regular tests.|
  | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3| |

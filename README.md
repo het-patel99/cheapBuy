@@ -14,6 +14,7 @@
 ---
 [![Build Status](https://app.travis-ci.com/het-patel99/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/het-patel99/cheapBuy/builds/238808731)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5540375.svg)](https://doi.org/10.5281/zenodo.5540375)
+[![codecov](https://codecov.io/gh/het-patl99/cheapBuy/branch/main/graph/badge.svg?token=c99f4109-92be-4066-9813-339a00494970)](https://codecov.io/gh/het-patel99/cheapBuy/)
 <!--Badges-->
 <a href="https://github.com/het-patel99/cheapBuy/blob/master/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy license" />
@@ -90,3 +91,15 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 ## 💻 Built with
 - [Javascript][python][html][css]
+
+## Contributors
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/het-patel99"><img src="https://avatars.githubusercontent.com/u/40118578?v=4" width="75px;" alt=""/><br /><sub><b>Het Patel</b></sub></a></td>
+    <td align="center"><a href="https://github.com/hvudeshi"><img src="https://avatars.githubusercontent.com/u/69849039?v=4" width="75px;" alt=""/><br /><sub><b>Hardik Udeshi</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/sal0ni"><img src="https://avatars.githubusercontent.com/u/25223347?v=4" width="75px;" alt=""/><br /><sub><b>Saloni Mahatma</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/kalgeekotak99"><img src="https://avatars.githubusercontent.com/u/41386638?s=400&u=b323434b42507c474829a804556d69da82d48c3f&v=4" width="75px;" alt=""/><br /><sub><b>Kalgee Kotak</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Vineet2311"><img src="https://avatars.githubusercontent.com/u/38115399?v=4" width="75px;" alt=""/><br /><sub><b>Vineet Chheda</b></sub></a><br /></td>
+  </tr>
+</table>
