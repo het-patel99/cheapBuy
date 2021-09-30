@@ -85,3 +85,11 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 ## 💻 Built with
 - [Javascript]
+
+## 🙇 Authors
+
+- [Hardik Udeshi](https://github.com/hvudeshi) 
+- [Het Patel](https://github.com/het-patel99)
+- [Kalgee Kotak](https://github.com/kalgeekotak99)
+- [Saloni Mahatma](https://github.com/sal0ni)
+- [Vineet Chheda](https://github.com/vineet2311)
