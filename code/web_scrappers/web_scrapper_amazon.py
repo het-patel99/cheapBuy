@@ -26,7 +26,7 @@ def extract_item_amazon(driver, search_term):
 	try:
 		results = scrap_amazon(driver, search_term)
 		if len(results) == 0:
-			return result 
+			return result
 		item=results[0]
 		atag = item.h2.a
 		result['description'] = atag.text.strip()
@@ -35,6 +35,6 @@ def extract_item_amazon(driver, search_term):
 		result['price'] = price_parent.find('span', 'a-offscreen').text.strip('$')
 		result['site'] = 'amazon'
 	except:
-		result = {}
+		result={}
 	return result
 
