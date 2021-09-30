@@ -22,4 +22,5 @@ jobs:
           echo requirements installed
       - name: Run tests
         run: |
-          pytest test/test.py
+          cd test
+          pytest
