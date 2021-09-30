@@ -14,7 +14,6 @@
 ---
 [![Build Status](https://app.travis-ci.com/het-patel99/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/het-patel99/cheapBuy/builds/238808731)
 <!--Badges-->
-<p align="center">
 <a href="https://zenodo.org/badge/latestdoi/409664226"><img src="https://zenodo.org/badge/409664226.svg" alt="DOI"></a>
 <a href="https://github.com/het-patel99/cheapBuy/blob/master/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy license" />
@@ -33,7 +32,6 @@
 </a>
  <a href="https://github.com/het-patel99/cheapBuy/graphs/contributors" alt="Contributors">
  <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
-</p>
 
 <!--working of extension gif-->
 <p align="center"><img src="images/cheapBuy.gif" alt="cheapBuy gif" /></p>
