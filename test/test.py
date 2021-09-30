@@ -7,7 +7,7 @@ from cheapBuy.test.test_web_scrapper import *
 def test_answer():
    # test_web_scrapper.py
    test_get_driver()
-   
+
    # test_web_scrapper_ebay.py
    test_get_url_ebay_1()
    test_get_url_ebay_2()
