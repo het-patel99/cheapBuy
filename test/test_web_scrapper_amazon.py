@@ -1,7 +1,7 @@
 import os
 import sys
 sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.web_scrapper_amazon import scrap_amazon, get_url_amazon, extract_item_amazon
+from cheapBuy.code.web_scrappers.web_scrapper_amazon import scrap_amazon, get_url_amazon
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
@@ -26,21 +26,3 @@ def test_scrap_amazon():
     item_name = "W. Trends Sunset Twin-Size Metal Bunk Bed - Black"
     results = scrap_amazon(setup_get_driver_details(), item_name)
     assert results is not None
-
-
-def test_extract_item_amazon_result_len():
-    item_name = "Brita Longlast Replacement Filters Dispensers"
-    result = extract_item_amazon(setup_get_driver_details(),item_name)
-    assert len(result) == 4
-
-
-def test_extract_item_amazon_result_site():
-    item_name = "Amazfit Band 5 Fitness Tracker with Alexa Built-in"
-    result = extract_item_amazon(setup_get_driver_details(),item_name)
-    assert result["site"] == "amazon"
-
-
-def test_extract_item_amazon_result_url():
-    item_name = "SAMSUNG Galaxy Tab A7 32GB"
-    result = extract_item_amazon(setup_get_driver_details(),item_name)
-    assert result["url"].find("https://www.amazon.com") != -1

@@ -8,6 +8,3 @@ def test_answer():
    test_get_url_amazon_1()
    test_get_url_amazon_2()
    test_scrap_amazon()
-   test_extract_item_amazon_result_len()
-   test_extract_item_amazon_result_site()
-   test_extract_item_amazon_result_url()
