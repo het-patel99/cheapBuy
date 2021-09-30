@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // function fetch_data(tabs){
     //     var headers = {}
-    //     const response = fetch('http://52.70.135.239:8080/scrap?link='+tabs[0].url, {
+    //     const response = fetch('http://18.233.163.121:8080/scrap?link='+tabs[0].url, {
     //         method: 'POST',
     //         headers: headers
     //       }).then(response => response.json()).then(data => data)
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     chrome.tabs.query(query, async (tabs) => {
               
         var headers = {}
-        const response = await fetch('http://52.70.135.239:8080/scrap?link='+tabs[0].url, {
+        const response = await fetch('http://18.233.163.121:8080/scrap?link='+tabs[0].url, {
             method: 'POST',
             headers: headers
           });
