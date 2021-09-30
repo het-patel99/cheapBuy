@@ -26,6 +26,6 @@ def extract_item_bjs(driver, search_term):
     result['description']=result['description'].get("title")
   result['description']=result['description'].replace(" | safeHtml","")
   result['price'] = item.find("div",{"class":"price-block no-select"}).get_text().strip().strip('$')
-  result['site'] = 'bjs'
+  result['site'] = 'Bjs'
   return result
 

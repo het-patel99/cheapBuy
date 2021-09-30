@@ -24,6 +24,6 @@ def extract_item_amazon(driver, search_term):
 	result['url'] = 'https://www.amazon.com'+atag.get('href')
 	price_parent = item.find('span', 'a-price')
 	result['price'] = price_parent.find('span', 'a-offscreen').text.strip('$')
-	result['site'] = 'amazon'
+	result['site'] = 'Amazon'
 	return result
 

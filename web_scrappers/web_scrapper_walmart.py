@@ -24,6 +24,6 @@ def extract_item_walmart(driver, search_term):
     result['url'] = atag.get('href')
     parent_price= item.find("div",{"class":"flex flex-wrap justify-start items-center lh-title mb2 mb1-m"})
     result['price'] = parent_price.find("div", {"class":"b black f5 mr1 mr2-xl lh-copy f4-l"}).text.strip('$')
-    result['site'] = 'walmart'
+    result['site'] = 'Walmart'
     return result
 
