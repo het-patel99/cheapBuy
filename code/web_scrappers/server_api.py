@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append(os.path.abspath('../../'))
+sys.path.append(os.path.abspath('../../../'))
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 from cheapBuy.code.web_scrappers.web_scrapper import scrapper
