@@ -1,10 +1,6 @@
 <p align="center">
   <a href="link-of-our-extension">
-<<<<<<< HEAD
     <img alt="GitHub Profile Readme Generator" src="code/extensions/images/cheapbuy.png" width="60" />
-=======
-    <img alt="GitHub Profile Readme Generator" src="extension/images/cheapbuy.png" width="60" />
->>>>>>> 8e51b91814cfe2848f8a68d0e55ca83b876b5521
   </a>
 </p>
 <h1 align="center">
