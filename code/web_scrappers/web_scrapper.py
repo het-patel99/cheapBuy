@@ -17,57 +17,75 @@ def get_driver():
 	return driver
 
 def scrapper(link):
-	driver = get_driver()
 	results = {'url':[],'description':[],'price':[],'site':[]}
-	if 'amazon' in link:
-		description = description_from_url_amazon(link)
-		result_dict_ebay = extract_item_ebay(driver, description)
-		results['url'].append(result_dict_ebay['url'])
-		results['description'].append(result_dict_ebay['description'])
-		results['price'].append(result_dict_ebay['price'])
-		results['site'].append(result_dict_ebay['site'])
-	elif 'ebay' in link:
-		description = description_from_url_ebay(link)
-		result_dict_amazon = extract_item_amazon(driver, description)
-		results['url'].append(result_dict_amazon['url'])
-		results['description'].append(result_dict_amazon['description'])
-		results['price'].append(result_dict_amazon['price'])
-		results['site'].append(result_dict_amazon['site'])
-	elif 'walmart' in link:
-		description = description_from_url_walmart(link)
-		result_dict_amazon = extract_item_amazon(driver, description)
-		result_dict_ebay = extract_item_ebay(driver, description)
-		results['url'].append(result_dict_amazon['url'])
-		results['url'].append(result_dict_ebay['url'])
-		results['description'].append(result_dict_amazon['description'])
-		results['description'].append(result_dict_ebay['description'])
-		results['price'].append(result_dict_amazon['price'])
-		results['price'].append(result_dict_ebay['price'])
-		results['site'].append(result_dict_amazon['site'])
-		results['site'].append(result_dict_ebay['site'])
-	elif 'costco' in link:
-		description = description_from_url_costco(link)
-		result_dict_amazon = extract_item_amazon(driver, description)
-		result_dict_ebay = extract_item_ebay(driver, description)
-		results['url'].append(result_dict_amazon['url'])
-		results['url'].append(result_dict_ebay['url'])
-		results['description'].append(result_dict_amazon['description'])
-		results['description'].append(result_dict_ebay['description'])
-		results['price'].append(result_dict_amazon['price'])
-		results['price'].append(result_dict_ebay['price'])
-		results['site'].append(result_dict_amazon['site'])
-		results['site'].append(result_dict_ebay['site'])
-	else:
-		description = description_from_url_bjs(link)
-		result_dict_amazon = extract_item_amazon(driver, description)
-		result_dict_ebay = extract_item_ebay(driver, description)
-		results['url'].append(result_dict_amazon['url'])
-		results['url'].append(result_dict_ebay['url'])
-		results['description'].append(result_dict_amazon['description'])
-		results['description'].append(result_dict_ebay['description'])
-		results['price'].append(result_dict_amazon['price'])
-		results['price'].append(result_dict_ebay['price'])
-		results['site'].append(result_dict_amazon['site'])
-		results['site'].append(result_dict_ebay['site'])
+	try:
+		driver = get_driver()
+		if 'amazon' in link:
+			try:
+				description = description_from_url_amazon(link)
+				result_dict_ebay = extract_item_ebay(driver, description)
+				results['url'].append(result_dict_ebay['url'])
+				results['description'].append(result_dict_ebay['description'])
+				results['price'].append(result_dict_ebay['price'])
+				results['site'].append(result_dict_ebay['site'])
+			except:
+				results = {'url':[],'description':[],'price':[],'site':[]}
+		elif 'ebay' in link:
+			try:
+				description = description_from_url_ebay(link)
+				result_dict_amazon = extract_item_amazon(driver, description)
+				results['url'].append(result_dict_amazon['url'])
+				results['description'].append(result_dict_amazon['description'])
+				results['price'].append(result_dict_amazon['price'])
+				results['site'].append(result_dict_amazon['site'])
+			except:
+				results = {'url':[],'description':[],'price':[],'site':[]}
+		elif 'walmart' in link:
+			try:
+				description = description_from_url_walmart(link)
+				result_dict_amazon = extract_item_amazon(driver, description)
+				result_dict_ebay = extract_item_ebay(driver, description)
+				results['url'].append(result_dict_amazon['url'])
+				results['url'].append(result_dict_ebay['url'])
+				results['description'].append(result_dict_amazon['description'])
+				results['description'].append(result_dict_ebay['description'])
+				results['price'].append(result_dict_amazon['price'])
+				results['price'].append(result_dict_ebay['price'])
+				results['site'].append(result_dict_amazon['site'])
+				results['site'].append(result_dict_ebay['site'])
+			except:
+				results = {'url':[],'description':[],'price':[],'site':[]}
+		elif 'costco' in link:
+			try:
+				description = description_from_url_costco(link)
+				result_dict_amazon = extract_item_amazon(driver, description)
+				result_dict_ebay = extract_item_ebay(driver, description)
+				results['url'].append(result_dict_amazon['url'])
+				results['url'].append(result_dict_ebay['url'])
+				results['description'].append(result_dict_amazon['description'])
+				results['description'].append(result_dict_ebay['description'])
+				results['price'].append(result_dict_amazon['price'])
+				results['price'].append(result_dict_ebay['price'])
+				results['site'].append(result_dict_amazon['site'])
+				results['site'].append(result_dict_ebay['site'])
+			except:
+				results = {'url':[],'description':[],'price':[],'site':[]}
+		else:
+			try:
+				description = description_from_url_bjs(link)
+				result_dict_amazon = extract_item_amazon(driver, description)
+				result_dict_ebay = extract_item_ebay(driver, description)
+				results['url'].append(result_dict_amazon['url'])
+				results['url'].append(result_dict_ebay['url'])
+				results['description'].append(result_dict_amazon['description'])
+				results['description'].append(result_dict_ebay['description'])
+				results['price'].append(result_dict_amazon['price'])
+				results['price'].append(result_dict_ebay['price'])
+				results['site'].append(result_dict_amazon['site'])
+				results['site'].append(result_dict_ebay['site'])
+			except:
+				results = {'url':[],'description':[],'price':[],'site':[]}
+	except:
+		results = {'url':[],'description':[],'price':[],'site':[]}
 
 	return results
