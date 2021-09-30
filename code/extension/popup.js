@@ -20,10 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         myJson = await response.json()
         console.log(myJson)
-        // })
-        
-        const barkTitle = 'hehe, get started with se project.'+myJson['url']
-        dialogBox.innerHTML = barkTitle;
+       
+        var web_response = ''
+       
+        for(let i=0;i<myJson['url'].length;i++){
+            web_response += '<div class="box"><h3>'+myJson['site'][i]+'</h3><br><h5>Product Name: '+myJson['description'][i]+'</h5><br><a href='+myJson['url'][i]+'><button class="button"><span>View this product</span></button></a><br><h6> Price:'+myJson['price'][i]+'</h6></div><br>'
+
+        }
+        dialogBox.innerHTML = web_response;
     });
 });
 
