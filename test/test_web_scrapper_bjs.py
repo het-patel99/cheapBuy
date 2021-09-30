@@ -2,7 +2,7 @@ import os
 import sys
 sys.path.append(os.path.abspath('../../'))
 from cheapBuy.code.web_scrappers.web_scrapper_bjs import scrap_bjs, get_url_bjs
-from selenium import webdrivers
+from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 
