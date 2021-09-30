@@ -1,14 +1,17 @@
+import os
+import sys
+sys.path.append(os.path.abspath('../../'))
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-from web_scrapper_amazon import extract_item_amazon
-from web_scrapper_ebay import extract_item_ebay
-from web_scrapper_walmart import extract_item_walmart
-from fetch_description_amazon import description_from_url_amazon
-from fetch_description_ebay import description_from_url_ebay
-from fetch_description_walmart import description_from_url_walmart
-from fetch_description_costco import description_from_url_costco
-from fetch_description_bjs import description_from_url_bjs
+from cheapBuy.code.web_scrappers.web_scrapper_amazon import extract_item_amazon
+from cheapBuy.code.web_scrappers.web_scrapper_ebay import extract_item_ebay
+from cheapBuy.code.web_scrappers.web_scrapper_walmart import extract_item_walmart
+from cheapBuy.code.web_scrappers.fetch_description_amazon import description_from_url_amazon
+from cheapBuy.code.web_scrappers.fetch_description_ebay import description_from_url_ebay
+from cheapBuy.code.web_scrappers.fetch_description_walmart import description_from_url_walmart
+from cheapBuy.code.web_scrappers.fetch_description_costco import description_from_url_costco
+from cheapBuy.code.web_scrappers.fetch_description_bjs import description_from_url_bjs
 
 def get_driver():
 	options = webdriver.ChromeOptions()
