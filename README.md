@@ -42,8 +42,7 @@
 
 ## 🚀 Demo 
 
-<p align = "center"> <[![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)>
-</p>
+[![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
 ## 🧐 Features
 - **Price Comparison**
 - **Get alternative website for the product**
