@@ -11,3 +11,5 @@ def description_from_url_walmart(link):
 	except:
 		description = ''
 	return description
+
+
