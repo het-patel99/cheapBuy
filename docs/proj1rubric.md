@@ -24,7 +24,7 @@
 | other automated analysis tools| 1| close as a feature https://github.com/het-patel99/cheapBuy/blob/main/.github/workflows/close_as_a_feature.yml |
 | test cases exist| 3 | a lot of test cases exist.|
 | test cases are routinely executed| 3 | Github actions and travis CI both are executing.|
- | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3| |
+ | the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up| 3| https://github.com/het-patel99/cheapBuy/blob/main/CONTRIBUTING.md |
 | issues are discussed before they are closed| 3| Most discussions on whatsapp, in person, on issue comments, and over calls.|
 | Chat channel: exists| 3| Whatsapp chat channel exists.|
 | test cases:.a large proportion of the issues related to handling failing cases.|2 |if a test case fails, open an issue and fix it|
