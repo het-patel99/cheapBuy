@@ -10,4 +10,3 @@ def test_answer():
     test_scrapper_bjs_result_len()
     test_scrapper_costco_result()
     test_scrapper_costco_result_len()
-    test_scrapper_costco_result_description_count()

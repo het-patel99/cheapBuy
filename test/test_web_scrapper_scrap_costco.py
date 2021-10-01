@@ -11,7 +11,3 @@ def test_scrapper_costco_result():
 def test_scrapper_costco_result_len():
     result = scrapper("https://www.costco.com/brita-replacement-filters%2c-10-pack.product.100131571.html")
     assert len(result) == 4
-
-def test_scrapper_costco_result_description_count():
-    result = scrapper("https://www.costco.com/apple-airpods-pro.product.100525619.html")
-    assert len(result["description"]) == 2
