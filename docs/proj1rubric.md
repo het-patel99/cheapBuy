@@ -48,7 +48,7 @@
 |  Comprehensive guide to all your software’s commands, functions and options| 3| Added docs in the docs folder |
 |  Troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages| 0|  NA |
 |  If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation| 1| |
-|  Documentation stored under revision control with source code| 3|  hhttps://github.com/ineelshah/SRIJAS/blob/main/README.md |
+|  Documentation stored under revision control with source code| 3| https://github.com/het-patel99/cheapBuy/blob/main/README.md  |
 |  Publishing the release history e.g. release data, version numbers, key features of each release etc. in your documentation | 3|  https://github.com/het-patel99/cheapBuy/releases |
 |  Software describes how a user can get help with using your software | 3| https://github.com/het-patel99/cheapBuy/blob/main/README.md |
 |  Our documentation describes what support we provide to users and developers | 3|  https://github.com/het-patel99/cheapBuy/blob/main/README.md |
@@ -76,7 +76,7 @@
 |  Software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional |  | |
 |  Download dependencies using a dependency management tool or package manager |  | |
 |  Tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful |  | |
-|  Automated test suite for your software | 3|  https://github.com/het-patel99/cheapBuy/SRIJAS/tree/main/tests|
+|  Automated test suite for your software | 3|  https://github.com/het-patel99/cheapBuy/tree/main/test|
 |  Framework to periodically (e.g. nightly) run your tests on the latest version of the source code |  | |
 |  Using continuous integration, automatically running tests whenever changes are made to your source code | 3|  https://github.com/het-patel99/cheapBuy/actions/workflows/unit_test.yml |
 |  Test results publicly visible | 3|  https://github.com/het-patel99/cheapBuy/actions/workflows/unit_test.yml |
