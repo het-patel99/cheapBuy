@@ -22,7 +22,9 @@ Also strictly follow our table of contents and make the required changes accordi
 - .github
     workflows
         all github workflow yaml files
-
+- docs
+    proj1rubrics.md
+    
 - .gitignore
 
 - .travis.yml
