@@ -68,6 +68,7 @@ cd cheapBuy
 ```
 pip install -r requirements.txt
 ```
+3. Check out the demo video to know about the use of the extension.
 
 ## Plan of Action :
 PHASE-1
