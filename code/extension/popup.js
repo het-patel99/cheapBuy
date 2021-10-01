@@ -2,18 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const dialogBox = document.getElementById('dialog-box');
     const query = { active: true, currentWindow: true };
 
-    // function fetch_data(tabs){
-    //     var headers = {}
-    //     const response = fetch('http://18.233.163.121:8080/scrap?link='+tabs[0].url, {
-    //         method: 'POST',
-    //         headers: headers
-    //       }).then(response => response.json()).then(data => data)
-    // }    
-
     chrome.tabs.query(query, async (tabs) => {
               
         var headers = {}
-        const response = await fetch('http://18.233.163.121:8080/scrap?link='+tabs[0].url, {
+        const response = await fetch('http://3.89.74.154:8080/scrap?link='+tabs[0].url, {
             method: 'POST',
             headers: headers
           });

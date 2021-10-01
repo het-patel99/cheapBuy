@@ -5,7 +5,4 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - pytest test/test.py
-  - pytest test/test2.py
-  - pytest test/test3.py
   - pytest test/test4.py
