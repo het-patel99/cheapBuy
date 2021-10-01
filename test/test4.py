@@ -14,4 +14,3 @@ def test_answer():
    test_fetch_description_bjs1()
    test_fetch_description_bjs2()
    test_fetch_description_costco1()
-   test_fetch_description_costco2()
