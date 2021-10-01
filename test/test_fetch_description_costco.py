@@ -12,4 +12,4 @@ def test_fetch_description_costco1():
 def test_fetch_description_costco2():
     link = "https://www.costco.com/tide-advanced-power-ultra-concentrated-liquid-laundry-detergent-with-oxi%2c-original%2c-81-loads%2c-150-fl-oz.product.100414600.html"
     description = description_from_url_costco(link)
-    assert description == "tide advanced power ultra concentrated liquid laundry detergent with oxi%2c original%2c 81 loads%2c 150 fl oz' == 'new apple ipad pro 12.9%e2%80%9d 512gb (5th gen)"
+    assert description == "tide advanced power ultra concentrated liquid laundry detergent with oxi%2c original%2c 81 loads%2c 150 fl oz'
