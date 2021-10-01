@@ -76,9 +76,48 @@ Try the tool: [cheapBuy](link of our extension)
 
 ## 🛠️ Installation Steps
 
-1. Clone this github repository
-2. Run requirement.txt file.
-3. 
+---
+1. Clone the github repository at the preferable location in your system. You will need git to be preinstalled in the system. Once the repository is cloned in your system, with the help of cd command ,
+```
+git clone https://github.com/het-patel99/cheapBuy.git
+cd cheapBuy
+```
+2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
+```
+pip install -r requirements.txt
+```
+3. Check out the demo video to know about the use of the extension.
+
+## Plan of Action :
+PHASE-1
+1. Fetching descirption of the user's current tab for ebay.
+2. Fetching descirption of the user's current tab for Walmart.
+3. Fetching descirption of the user's current tab for amazon.
+4. Fetching descirption of the user's current tab for Bjs.
+5. Fetching descirption of the user's current tab for Costco.
+6. Web Scrapping various product details from amazon.
+7. Web Scrapping various product details from Ebay.
+8. Exception handling of web scrapping.
+9. Server API for web scrapping.
+10. Deploying server on AWS.
+11. Build an extension for this price comparison.
+12. Extract knowledge like prices, sites, URL, comparison, description from scrapped data.
+13. Show all the scrapped data and the knowledge gained on the extension page.
+
+PHASE-2
+1. Add a badge on the user's current tab.
+2. Improvement of extension UI.
+3. Alternate product suggestion feature.
+4. Improve accuracy of the product. Example : If user's current tab is having Television of a particular brand and there is a better option available at a cheaper or comparable rate than provide alternative product accordingly.
+5. Add web scrapping for other websites such as Walmart, Bjs, Costco, etc.
+6. Improve code execution speed using multithreading.
+7. Show a avialable coupon on other shopping website.
+
+PHASE-3
+1. Automatic deployment of server using Teraform or ansible.
+2. Develop a website instead of extension.
+3. Dashboard including how many user's click on the website.
+4. Email notification of the available coupon to the user.
 
 
 🌟 You are all set!
