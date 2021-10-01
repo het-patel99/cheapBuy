@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="link-of-our-extension">
+    <img alt="GitHub Profile Readme Generator" src="code/extension/images/cheapbuy.png" width="60" />
+  </a>
+</p>
+
 [![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
 </br>
 </br>
