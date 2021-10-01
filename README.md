@@ -1,6 +1,6 @@
 <p align="center">
   <a href="link-of-our-extension">
-    <img alt="GitHub Profile Readme Generator" src="code/extension/images/cheapbuy.png" width="60" />
+    <img alt="GitHub Profile Readme Generator" src="code/extension/images/cheapbuy.png" width="120" />
   </a>
 </p>
 <h1 align="center">
