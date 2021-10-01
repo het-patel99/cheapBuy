@@ -5,5 +5,4 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - pytest test/test5.py
   - pytest test/test6.py
