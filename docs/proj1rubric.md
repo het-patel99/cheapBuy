@@ -13,7 +13,7 @@
 | DOI badge: exists |3 |In GH (https://github.com/het-patel99/cheapBuy/blob/main/README.md)|
 |Docs: doco generated , format not ugly | 0| Not yet implemented|
 |Docs: what: point descriptions of each class/function (in isolation) | 0| Not yet implemented|
-|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z| 2|The demo video shows this (https://github.com/ineelshah/SRIJAS/blob/main/README.md)|
+|Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z| 2|The demo video shows this (https://github.com/het-patel99/cheapBuy/blob/main/README.md)|
 |Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing| 3| The demo video and repository homepage (README) shows this (https://github.com/het-patel99/cheapBuy/blob/main/README.md)|
 |Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.|3 | CHEAPBUY_DEMO.mp4 as attached in the README.md in the repository. (https://github.com/het-patel99/cheapBuy/blob/main/README.md)|
 | Use of version control tools| 3| Git is used thorougly in the project (https://github.com/het-patel99/cheapBuy)|
