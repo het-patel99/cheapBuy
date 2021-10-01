@@ -58,9 +58,16 @@ Try the tool: [cheapBuy](link of our extension)
 
 ## 🛠️ Installation Steps
 
-1. Clone this github repository
-2. Run requirement.txt file.
-3. 
+---
+1. Clone the github repository at the preferable location in your system. You will need git to be preinstalled in the system. Once the repository is cloned in your system, with the help of cd command ,
+```
+git clonehttps://github.com/het-patel99/cheapBuy.git
+cd cheapBuy
+```
+2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
+```
+pip install -r requirements.txt
+```
 
 ## Plan of Action :
 PHASE-1
