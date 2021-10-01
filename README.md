@@ -14,7 +14,7 @@
 ---
 [![Build Status](https://app.travis-ci.com/het-patel99/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/het-patel99/cheapBuy/builds/238891348)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5540375.svg)](https://doi.org/10.5281/zenodo.5540375)
-[![codecov](https://codecov.io/gh/het-patl99/cheapBuy/branch/main/graph/badge.svg?token=c99f4109-92be-4066-9813-339a00494970)](https://codecov.io/gh/het-patel99/cheapBuy/)
+[![codecov](https://codecov.io/gh/het-patel99/cheapBuy/branch/main/graph/badge.svg?token=6D5N39DIO7)](https://codecov.io/gh/het-patel99/cheapBuy)
 ![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/unit_test.yml/badge.svg)
 ![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/style_checker.yml/badge.svg)
 ![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/main.yml/badge.svg)
