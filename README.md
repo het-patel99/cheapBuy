@@ -88,7 +88,7 @@ pip install -r requirements.txt
 3. Check out the demo video to know about the use of the extension.
 
 ## Plan of Action :
-PHASE-1
+## PHASE-1
 1. Fetching descirption of the user's current tab for ebay.
 2. Fetching descirption of the user's current tab for Walmart.
 3. Fetching descirption of the user's current tab for amazon.
@@ -103,7 +103,7 @@ PHASE-1
 12. Extract knowledge like prices, sites, URL, comparison, description from scrapped data.
 13. Show all the scrapped data and the knowledge gained on the extension page.
 
-PHASE-2
+## PHASE-2
 1. Add a badge on the user's current tab.
 2. Improvement of extension UI.
 3. Alternate product suggestion feature.
@@ -112,7 +112,7 @@ PHASE-2
 6. Improve code execution speed using multithreading.
 7. Show a avialable coupon on other shopping website.
 
-PHASE-3
+## PHASE-3
 1. Automatic deployment of server using Teraform or ansible.
 2. Develop a website instead of extension.
 3. Dashboard including how many user's click on the website.
