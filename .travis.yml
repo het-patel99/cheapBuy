@@ -9,3 +9,4 @@ script:
   - pytest test/test2.py
   - pytest test/test3.py
   - pytest test/test5.py
+  - pytest test/test6.py
