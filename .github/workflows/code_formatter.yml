@@ -1,25 +1,53 @@
-name: Format
+name: Formatting python code
 on:
-  pull_request:
-    branches: [main]
+  push:
+    paths:
+    - '**.py'
 jobs:
-  format:
+  autoyapf:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@master
         with:
           ref: ${{ github.head_ref }}
-      - uses: actions/setup-node@v2
+      - name: autoyapf
+        id: autoyapf
+        uses: mritunjaysharma394/autoyapf@v2
         with:
-          node-version: "16"
-      - run: npm install 
-      - run: npm ci --force
-      - run: npm run format
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Apply formatting changes
-          branch: ${{ github.head_ref }}
+          args: --style pep8 --recursive --in-place .
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
+      - name: Push changes
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git config --global user.name 'het-patel99'
+          git config --global user.email 'hetpatel0199@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GIT_TOKEN }}@github.com/${{ het-patel99/cheapBuy }}
+          git commit -am "Automated autoyapf fixes"
+          git push
+# name: Format
+# on:
+#   pull_request:
+#     branches: [main]
+# jobs:
+#   format:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
+#         with:
+#           ref: ${{ github.head_ref }}
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: "16"
+#       - run: npm install 
+#       - run: npm ci --force
+#       - run: npm run format
+#       - name: Commit changes
+#         uses: stefanzweifel/git-auto-commit-action@v4
+#         with:
+#           commit_message: Apply formatting changes
+#           branch: ${{ github.head_ref }}
 # name: black-action
 # on: [push, pull_request]
 # jobs:
