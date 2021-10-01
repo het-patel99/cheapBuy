@@ -34,7 +34,6 @@
  <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
 </p>
 
-[![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/1.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
 <p align="center">
     <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Report Bug</a>
     ·
@@ -42,12 +41,8 @@
 </p>
 
 ## 🚀 Demo 
-<a href="https://het-patel99.github.io/cheapBuy" target="blank">
-  <img src="https://img.shields.io/website?url=------link-of-our-extension---------------r&logo=github&style=flat-square" />
-</a>
-<p>
-Try the tool: [cheapBuy](link of our extension)
-</p>
+
+[![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
 
 ## 🧐 Features
 - **Price Comparison**
@@ -59,7 +54,7 @@ Try the tool: [cheapBuy](link of our extension)
 ---
 1. Clone the github repository at the preferable location in your system. You will need git to be preinstalled in the system. Once the repository is cloned in your system, with the help of cd command ,
 ```
-git clonehttps://github.com/het-patel99/cheapBuy.git
+git clone https://github.com/het-patel99/cheapBuy.git
 cd cheapBuy
 ```
 2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
