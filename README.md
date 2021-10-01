@@ -34,7 +34,7 @@
  <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
 </p>
 
-[![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
+[![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/1.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
 <p align="center">
     <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Report Bug</a>
     ·
