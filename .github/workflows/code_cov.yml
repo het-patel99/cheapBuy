@@ -1,5 +1,10 @@
-name: CodeCov
-on: [push, pull_request]
+name: Running Code Coverage 
+on: push: 
+      branches:
+        -main
+    pull_request:
+      branches:
+        -main
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -17,12 +22,16 @@ jobs:
         python-version: 3.7
     - name: Generate Report
       run: |
+        pip install pytest-cov
+        pip install -r requirements.txt
         cd test
         pip install coverage
         coverage run -m unittest
     - name: Upload Coverage to Codecov
       uses: codecov/codecov-action@v1
-      with:
+      with: 
+        token: ${{ secrets.CODE_COV_SEC }}
+
 # name: Running Code Coverage
 # on:
 #   push:
