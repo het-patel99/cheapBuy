@@ -53,8 +53,6 @@
 <a href="https://img.shields.io/tokei/lines/github/het-patel99/cheapBuy" alt="total lines">
 <img src="https://img.shields.io/tokei/lines/github/het-patel99/cheapBuy" /></a> 
 
-<!--working of extension gif-->
-<p align="center"><img src="images/cheapBuy.gif" alt="cheapBuy gif" /></p>
 
 <p align="center">
     <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Report Bug</a>
@@ -63,16 +61,12 @@
 </p>
 
 ## 🚀 Demo 
-<a href="https://het-patel99.github.io/cheapBuy" target="blank">
-  <img src="https://img.shields.io/website?url=------link-of-our-extension---------------r&logo=github&style=flat-square" />
-</a>
-<p>
-Try the tool: [cheapBuy](link of our extension)
-</p>
 
+[![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
 ## 🧐 Features
 - **Price Comparison**
-- **Feature 2**
+- **Get alternative website for the product**
+
 
 ## 🛠️ Installation Steps
 
