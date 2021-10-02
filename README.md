@@ -1,6 +1,6 @@
 <p align="center">
   <a href="link-of-our-extension">
-    <img alt="GitHub Profile Readme Generator" src="code/extension/images/cheapbuy.png" width="60" />
+    <img alt="GitHub Profile Readme Generator" src="code/extension/images/cheapbuy.png" width="120" />
   </a>
 </p>
 <h1 align="center">
@@ -14,7 +14,12 @@
 ---
 [![Build Status](https://app.travis-ci.com/het-patel99/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/het-patel99/cheapBuy/builds/238891348)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5540375.svg)](https://doi.org/10.5281/zenodo.5540375)
-[![codecov](https://codecov.io/gh/het-patl99/cheapBuy/branch/main/graph/badge.svg?token=c99f4109-92be-4066-9813-339a00494970)](https://codecov.io/gh/het-patel99/cheapBuy/)
+[![codecov](https://codecov.io/gh/het-patel99/cheapBuy/branch/main/graph/badge.svg?token=6D5N39DIO7)](https://codecov.io/gh/het-patel99/cheapBuy)
+![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/unit_test.yml/badge.svg)
+![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/style_checker.yml/badge.svg)
+![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/main.yml/badge.svg)
+![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/code_cov.yml/badge.svg)
+![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/close_as_a_feature.yml/badge.svg)
 <!--Badges-->
 <a href="https://github.com/het-patel99/cheapBuy/blob/master/LICENSE" target="blank">
 <img src="https://img.shields.io/github/license/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy license" />
@@ -83,7 +88,7 @@ pip install -r requirements.txt
 3. Check out the demo video to know about the use of the extension.
 
 ## Plan of Action :
-PHASE-1
+## PHASE-1
 1. Fetching descirption of the user's current tab for ebay.
 2. Fetching descirption of the user's current tab for Walmart.
 3. Fetching descirption of the user's current tab for amazon.
@@ -98,7 +103,7 @@ PHASE-1
 12. Extract knowledge like prices, sites, URL, comparison, description from scrapped data.
 13. Show all the scrapped data and the knowledge gained on the extension page.
 
-PHASE-2
+## PHASE-2
 1. Add a badge on the user's current tab.
 2. Improvement of extension UI.
 3. Alternate product suggestion feature.
@@ -107,7 +112,7 @@ PHASE-2
 6. Improve code execution speed using multithreading.
 7. Show a avialable coupon on other shopping website.
 
-PHASE-3
+## PHASE-3
 1. Automatic deployment of server using Teraform or ansible.
 2. Develop a website instead of extension.
 3. Dashboard including how many user's click on the website.
