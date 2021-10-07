@@ -52,7 +52,7 @@
 |  Publishing the release history e.g. release data, version numbers, key features of each release etc. in your documentation | 3|  https://github.com/het-patel99/cheapBuy/releases |
 |  Software describes how a user can get help with using your software | 3| https://github.com/het-patel99/cheapBuy/blob/main/README.md |
 |  Our documentation describes what support we provide to users and developers | 3|  https://github.com/het-patel99/cheapBuy/blob/main/README.md |
-|  Project has an e-mail address or forum that is solely for supporting users | 3  |  cheapbuy@gmail.com |
+|  Project has an e-mail address or forum that is solely for supporting users | 3  |  cheapbuyextension@gmail.com |
 |  E-mails to our support e-mail address are received by more than one person |  |  Not yet Implemented |
 |  Project have a ticketing system to manage bug reports and feature requests | 3 |  https://github.com/het-patel99/cheapBuy/projects/1 |
 |  Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests |  Yes (3) |  https://github.com/het-patel99/cheapBuy/projects/1 |
