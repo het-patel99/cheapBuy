@@ -6,7 +6,7 @@ setup(name='cheapBuy',
       author='Hardik, Het, Vineet, Saloni, Kalgee',
       author_email='hetpatel0199@gmail.com',
       url='https://github.com/het-patel99/cheapBuy.git',
-      packages=['cheapBuy'],
+      packages=['.'],
       long_description="""\
             Hands on for the standard github repo files.
             .gitignore
@@ -35,10 +35,12 @@ setup(name='cheapBuy',
       keywords='python requirements license gitignore',
       license='MIT',
       install_requires=[
-            'BeautifulSoup',
-            'pytest',
-            'Flask',
-            'Flask-Cors',
-            'webdriver_manager'
+            'Flask==1.1.2',
+            'Flask-Cors==3.0.10',
+            'Flask-RESTful==0.3.9',
+            'bs4==0.0.1',
+            'webdriver-manager==3.4.2',
+            'selenium==3.141.0',
+            'requests==2.18.4'
         ],
      )
