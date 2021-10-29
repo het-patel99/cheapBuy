@@ -4,4 +4,5 @@ requests
 Flask
 Flask-RESTful
 Flask-Cors
-bs4
+beautifulsoup4
+pytest

@@ -1,9 +1,6 @@
-import os
-import sys
-sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.web_scrapper_ebay import scrap_ebay, get_url_ebay, extract_item_ebay
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from ..code.web.scraper.scrap.ebay import get_url_ebay, scrap_ebay, extract_item_ebay
 
 
 def setup_get_driver_details():

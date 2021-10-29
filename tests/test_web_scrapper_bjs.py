@@ -1,9 +1,6 @@
-import os
-import sys
-sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.web_scrapper_bjs import scrap_bjs, get_url_bjs
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from ..code.web.scraper.scrap.bjs import get_url_bjs, scrap_bjs
 
 
 def setup_get_driver_details():

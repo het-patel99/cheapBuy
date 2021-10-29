@@ -1,10 +1,6 @@
-import os
-import sys
-sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.web_scrapper_walmart import scrap_walmart, get_url_walmart
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
-
+from ..code.web.scraper.scrap.walmart import get_url_walmart, scrap_walmart
 
 def setup_get_driver_details():
     options = webdriver.ChromeOptions()
