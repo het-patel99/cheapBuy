@@ -1,9 +1,6 @@
-import os
-import sys
-sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.web_scrapper_amazon import scrap_amazon, get_url_amazon
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
+from ..code.web.scraper.scrap.amazon import get_url_amazon, scrap_amazon
 
 
 def setup_get_driver_details():

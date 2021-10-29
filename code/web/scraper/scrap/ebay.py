@@ -6,6 +6,7 @@ def get_url_ebay(search_term):
     template=template.format(search_term)
   except:
     template = ''
+  print(f"Constructed Ebay URL: \n {template}")
   return template
 
 def scrap_ebay(driver, search_term):
@@ -24,7 +25,9 @@ def extract_item_ebay(driver, search_term):
   try:
     results = scrap_ebay(driver, search_term)
     if len(results) == 0:
-      return result 
+      print(f'***** For search_term: {search_term}, \n No item found scrapping Ebay.')
+      return result
+    print(f'Found {len(results)} items on the Ebay, picking the 1st one.') 
     item=results[0]
     atag = item.find("a",{"class":"s-item__link"})
     result['description'] = item.find("h3",{"class":"s-item__title"}).get_text().strip()
@@ -32,5 +35,9 @@ def extract_item_ebay(driver, search_term):
     result['price'] = item.find("span",{"class":"s-item__price"}).get_text().strip().strip('$')
     result['site'] = 'ebay'
   except:
+    print('Scraping failed for Ebay')
     result = {}
   return result
+
+			
+		

@@ -1,7 +1,5 @@
-import os
-import sys
-sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.fetch_description_walmart import description_from_url_walmart
+from ..code.web.scraper.fetch_description.walmart import description_from_url_walmart
+
 
 
 def test_fetch_description_walmart1():

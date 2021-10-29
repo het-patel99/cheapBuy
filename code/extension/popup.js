@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
     chrome.tabs.query(query, async (tabs) => {
               
         var headers = {}
-        const response = await fetch('http://3.89.74.154:8080/scrap?link='+tabs[0].url, {
+        // console.log("***** Item Search Started on source site! *****")
+        const response = await fetch('http://0.0.0.0:8080/scrap?link='+tabs[0].url, {
             method: 'POST',
             headers: headers
           });
-
+        // console.log("***** Item Search ended on source site! *****")
         myJson = await response.json()
         console.log(myJson)
        

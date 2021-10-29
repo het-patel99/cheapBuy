@@ -1,8 +1,4 @@
-import os
-import sys
-sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.fetch_description_amazon import description_from_url_amazon
-
+from ..code.web.scraper.fetch_description.amazon import description_from_url_amazon
 
 def test_fetch_description_amazon1():
     link = "https://www.amazon.com/2021-Apple-10-2-inch-iPad-Wi-Fi/dp/B09G9FPHY6/ref=sr_1_3?dchild=1&keywords=ipad&qid=1632940310&sr=8-3"

@@ -83,9 +83,16 @@ cd cheapBuy
 ```
 2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
 ```
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 3. Check out the demo video to know about the use of the extension.
+
+## How to run it?
+```
+python code/web/server_api.py
+```
 
 ## Plan of Action :
 ## PHASE-1

@@ -1,1 +1,8 @@
--e .
+webdriver-manager
+selenium
+requests
+Flask
+Flask-RESTful
+Flask-Cors
+beautifulsoup4
+pytest

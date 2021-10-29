@@ -1,7 +1,4 @@
-import os
-import sys
-sys.path.append(os.path.abspath('../../'))
-from cheapBuy.code.web_scrappers.fetch_description_bjs import description_from_url_bjs
+from ..code.web.scraper.fetch_description.bjs import description_from_url_bjs
 
 def test_fetch_description_bjs1():
     link = "https://www.bjs.com/product/apple-ipad-pro-11-3rd-generation-256gb-wi-fi---space-gray/3000000000001510763"
