@@ -8,6 +8,9 @@ def description_from_url_ebay(link):
 		soup=BeautifulSoup(html.content,'html.parser')
 		product = soup.find("div",{"class" : "vi-swc-lsp"}, { "id" : "itemTitle" })
 		title = product.find('span', class_="u-dspn").text.strip()
+		print(f'Extracted item/search_term/title to be searched:\n {title}')
 	except:
+		print("Can't pull the description from Ebay url.")
 		title = ''
-	return title 
+	print('-'*10)	
+	return title

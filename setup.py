@@ -34,13 +34,5 @@ setup(name='cheapBuy',
         ],
       keywords='python requirements license gitignore',
       license='MIT',
-      install_requires=[
-            'Flask==1.1.2',
-            'Flask-Cors==3.0.10',
-            'Flask-RESTful==0.3.9',
-            'bs4==0.0.1',
-            'webdriver-manager==3.4.2',
-            'selenium==3.141.0',
-            'requests==2.18.4'
-        ],
+      install_requires=[],
      )
