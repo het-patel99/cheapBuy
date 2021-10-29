@@ -1,5 +1,6 @@
 
 # from webdriver_manager import driver
+import re
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
@@ -57,12 +58,13 @@ def search_ebay(driver, description, results):
 def scraper(link):
 	print('\n \t\t\t\t\t\t\t ****** User request Started.******\n')
 
-	results = {'url':[],'description':[],'price':[],'site':[]}
 	driver = get_driver()
 
 	print(f'User selected url: \n {link}')
 	print('-'*10)	
-
+	
+	results = {'url':[],'description':[],'price':[],'site':[]}
+	
 	if 'amazon.com' in link:
 		print('User selected amazon')
 		description = description_from_url_amazon(link)
@@ -72,6 +74,8 @@ def scraper(link):
 			# search item on Ebay!
 			search_ebay(driver, description, results)
 			return results
+		else:
+			return ''
 
 	if 'ebay.com' in link:
 		print('User selected ebay')
@@ -82,6 +86,8 @@ def scraper(link):
 			# search item on amazon!
 			search_amazon(driver, description, results)
 			return results
+		else:
+			return ''
 
 	if 'walmart.com' in link:
 		print('User selected Walmart')
@@ -95,6 +101,8 @@ def scraper(link):
 			# search item on ebay!
 			search_ebay(driver, description, results)
 			return results
+		else:
+			return ''
 
 	if 'costco.com' in link:
 		print('User selected costco')	
@@ -108,7 +116,9 @@ def scraper(link):
 			# search item on ebay!
 			search_ebay(driver, description, results)
 			return results
-
+		else:
+			return ''
+			
 	if 'bjs.com' in link:
 		print('User selected bjs')
 		description = description_from_url_bjs(link)
@@ -121,16 +131,7 @@ def scraper(link):
 			# search item on ebay!
 			search_ebay(driver, description, results)
 			return results	
-			
-	else:
-		print("CheapBuy only supports\n \
-						amazon.com\n \
-						ebay.com\n \
-						walmart.com\n \
-						costco.com\n \
-						Bjs.com\n \
-						please use only these websites to search for your item.\n \
-						Sorry for any inconvinience \n")
-		return ''
+		else:
+			return ''		
 	print('\n \t\t\t\t\t\t\t ****** User request finished.******')
 
