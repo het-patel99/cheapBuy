@@ -49,7 +49,8 @@ def extract_item_walmart(driver, search_term):
                 f"***** For search_term: {search_term}, \n No item found scrapping Walmart."
             )
             return result
-        print(f"Found {len(results)} items on the Walmart, picking the 1st one.")
+        print(
+            f"Found {len(results)} items on the Walmart, picking the 1st one.")
         item = results[0]
         atag = item.find("a", {"class": "absolute w-100 h-100 z-1"})
         result["description"] = atag.find("span", {"class": "w_Cs"}).text

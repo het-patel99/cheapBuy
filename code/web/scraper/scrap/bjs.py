@@ -20,12 +20,15 @@ def extract_item_bjs(driver, search_term):
     if len(results) == 0:
         return result
     item = results[1]
-    atag = item.find("a", {"class": "product-link mt-xl-3 mt-xs-3 mt-md-0 mt-3"})
+    atag = item.find(
+        "a", {"class": "product-link mt-xl-3 mt-xs-3 mt-md-0 mt-3"})
     result["url"] = "https://www.bjs.com" + atag.get("href")
-    result["description"] = item.find("h2", {"class": "product-title no-select d-none"})
+    result["description"] = item.find(
+        "h2", {"class": "product-title no-select d-none"})
     if result["description"] == None:
         result["description"] = (
-            item.find("h2", {"class": "product-title no-select d-none d-sm-block"})
+            item.find(
+                "h2", {"class": "product-title no-select d-none d-sm-block"})
             .get_text()
             .strip()
         )

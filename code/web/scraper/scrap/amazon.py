@@ -18,7 +18,8 @@ def scrap_amazon(driver, search_term):
         url = get_url_amazon(search_term)
         driver.get(url)
         soup = BeautifulSoup(driver.page_source, "html.parser")
-        results = soup.find_all("div", {"data-component-type": "s-search-result"})
+        results = soup.find_all(
+            "div", {"data-component-type": "s-search-result"})
     except:
         results = []
     return results
@@ -29,7 +30,8 @@ def extract_item_amazon(driver, search_term):
     try:
         results = scrap_amazon(driver, search_term)
         if len(results) == 0:
-            print(f"For search_term: {search_term}, \n No item found scrapping Amazon.")
+            print(
+                f"For search_term: {search_term}, \n No item found scrapping Amazon.")
             return result
         print(f"Found {len(results)} items on the amazon, picking the 1st one.")
         item = results[0]

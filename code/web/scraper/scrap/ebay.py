@@ -8,7 +8,7 @@ def get_url_ebay(search_term):
     :return:
     """
     domain_name = "https://www.ebay.com"
-    amended_search_term = "%20".join(search_term.split(" "))
+    amended_search_term = search_term.replace("%20", " ")
     url = f"{domain_name}/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={amended_search_term}"
 
     print(f"Constructed Ebay URL: \n >>{url}<<")
@@ -58,7 +58,8 @@ def extract_item_ebay(driver, search_term):
         )
         result["url"] = atag.get("href")
         result["price"] = (
-            item.find("span", {"class": "s-item__price"}).get_text().strip().strip("$")
+            item.find("span", {"class": "s-item__price"}
+                      ).get_text().strip().strip("$")
         )
         result["site"] = "ebay"
     except:

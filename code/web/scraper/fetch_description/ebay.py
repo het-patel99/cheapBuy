@@ -14,7 +14,8 @@ def description_from_url_ebay(link):
         }
         html = requests.get(link, headers=headers)
         soup = BeautifulSoup(html.content, "html.parser")
-        product = soup.find("div", {"class": "vi-swc-lsp"}, {"id": "itemTitle"})
+        product = soup.find(
+            "div", {"class": "vi-swc-lsp"}, {"id": "itemTitle"})
         title = product.find("span", class_="u-dspn").text.strip()
         print(f"Extracted item/search_term/title to be searched:\n {title}")
     except:
