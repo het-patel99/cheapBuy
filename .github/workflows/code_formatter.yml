@@ -1,7 +1,7 @@
 name: Format
 on:
   pull_request: 
-    branches: [main]
+    branches: [dev_aakriti]
     paths:
     - '**.py'
 jobs:
@@ -22,8 +22,8 @@ jobs:
       - name: Push changes
         if: steps.git-check.outputs.modified == 'true'
         run: |
-          git config --global user.name 'het-patel99'
-          git config --global user.email 'hetpatel0199@gmail.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GIT_TOKEN }}@github.com/${{ het-patel99/cheapBuy }}
+          git config --global user.name 'aakriti0fnu'
+          git config --global user.email 'aakriti.cse@gmail.com'
+          git remote set-url origin https://x-access-token:${{ secrets.GIT_TOKEN }}@github.com/${{ aakriti0fnu/cheapBuy }}
           git commit -am "Automated autoyapf fixes"
           git push

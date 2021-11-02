@@ -1,2 +1,2 @@
-[![Build Status](https://app.travis-ci.com/het-patel99/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/het-patel99/cheapBuy/builds/238891348)
+[![Build Status](https://app.travis-ci.com/aakriti0fnu/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/aakriti0fnu/cheapBuy/builds/238891348)
 

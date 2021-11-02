@@ -36,10 +36,10 @@ name: Running Code Coverage
 on:
   push:
     branches:
-      - main
+      - dev_aakriti
   pull_request:
     branches:
-      - main
+      - dev_aakriti
 
 jobs:
   build:
@@ -61,6 +61,6 @@ jobs:
           cd test
           pytest --cov=./
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      with:
-        token: ${{ secrets.CODE_COV_SEC }}
+      uses: codecov/codecov-action@v2
+#      with:
+#        token: ${{ secrets.CODE_COV_SEC }}
