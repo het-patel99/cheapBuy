@@ -12,7 +12,6 @@
 **cheapBuy Extension** provides you ease to buy any product through your favourite website's like Amazon, Walmart, Ebay, Bjs, Costco, etc, by providing prices of the same product from all different websites to extension. It takes lot of time to search for the same product in different websites, and find the cheapest one, instead just add our extension **cheapBuy** and it will automatically fetch you price of the same product from different websites and you can directly compare the prices from different websites through our extension. In sum, **cheapBuy** is an one stop solution to buy the cheapest product online.
 
 ---
-[![Build Status](https://app.travis-ci.com/aakriti0fnu/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/aakriti0fnu/cheapBuy/builds/238891348)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5540375.svg)](https://doi.org/10.5281/zenodo.5540375)
 [![codecov](https://codecov.io/gh/aakriti0fnu/cheapBuy/branch/dev_aakriti/graph/badge.svg?token=6D5N39DIO7)](https://codecov.io/gh/aakriti0fnu/cheapBuy)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/unit_test.yml/badge.svg)
@@ -20,51 +19,53 @@
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/main.yml/badge.svg)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/code_cov.yml/badge.svg)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/close_as_a_feature.yml/badge.svg)
+---
 <!--Badges-->
 <a href="https://github.com/aakriti0fnu/cheapBuy/blob/master/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy license" />
+  <img src="https://img.shields.io/github/license/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy license" />
 </a>
 <a href="https://github.com/aakriti0fnu/cheapBuy/fork" target="blank">
-<img src="https://img.shields.io/github/forks/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy forks"/>
+  <img src="https://img.shields.io/github/forks/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy forks" />
 </a>
 <a href="https://github.com/aakriti0fnu/cheapBuy/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/aakriti0fnu/cheapBuy?style=flat-square" alt="gcheapBuy stars"/>
+  <img src="https://img.shields.io/github/stars/aakriti0fnu/cheapBuy?style=flat-square" alt="gcheapBuy stars" />
 </a>
 <a href="https://github.com/aakriti0fnu/cheapBuy/issues" target="blank">
-<img src="https://img.shields.io/github/issues/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy issues"/>
+  <img src="https://img.shields.io/github/issues/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy issues" />
 </a>
 <a href="https://github.com/aakriti0fnu/cheapBuy/issues" target="blank">
-<img src="https://img.shields.io/github/issues-closed/aakriti0fnu/cheapBuy" alt="cheapBuy issues closed"/>
+  <img src="https://img.shields.io/github/issues-closed/aakriti0fnu/cheapBuy" alt="cheapBuy issues closed" />
 </a>
 <a href="https://github.com/aakriti0fnu/cheapBuy/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy pull-requests"/>
+  <img src="https://img.shields.io/github/issues-pr/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy pull-requests" />
+</a>
+<a href="https://github.com/aakriti0fnu/cheapBuy/graphs/contributors" alt="Contributors">
+  <img src="https://img.shields.io/github/contributors/aakriti0fnu/cheapBuy" />
+</a>
+<a href="https://github.com/aakriti0fnu/cheapBuy/milestones" alt="milestones">
+  <img src="https://img.shields.io/github/milestones/all/aakriti0fnu/cheapBuy" />
+</a>
+<a href="https://github.com/aakriti0fnu/cheapBuy/graphs/commit-activity" alt="commit activity">
+  <img src="https://img.shields.io/github/commit-activity/w/aakriti0fnu/cheapBuy" />
+</a>
+<a href="https://github.com/aakriti0fnu/cheapBuy/discussions" alt="discussion">
+  <img src="https://img.shields.io/github/discussions/aakriti0fnu/cheapBuy" />
+</a>
+<a href="https://img.shields.io/github/repo-size/aakriti0fnu/cheapBuy" alt="repo size">
+  <img src="https://img.shields.io/github/repo-size/aakriti0fnu/cheapBuy" />
+</a>
+<a href="https://img.shields.io/tokei/lines/github/aakriti0fnu/cheapBuy" alt="total lines">
+  <img src="https://img.shields.io/tokei/lines/github/aakriti0fnu/cheapBuy" />
 </a>
 
-<a href="https://github.com/aakriti0fnu/cheapBuy/graphs/contributors" alt="Contributors">
-<img src="https://img.shields.io/github/contributors/aakriti0fnu/cheapBuy" /></a>
-
-<a href="https://github.com/aakriti0fnu/cheapBuy/milestones" alt="milestones">
-<img src="https://img.shields.io/github/milestones/all/aakriti0fnu/cheapBuy" /></a> 
-
-<a href="https://github.com/aakriti0fnu/cheapBuy/graphs/commit-activity" alt="commit activity">
-<img src="https://img.shields.io/github/commit-activity/w/aakriti0fnu/cheapBuy" /></a> 
-
-<a href="https://github.com/aakriti0fnu/cheapBuy/discussions" alt="discussion">
-<img src="https://img.shields.io/github/discussions/aakriti0fnu/cheapBuy" /></a> 
-
-<a href="https://img.shields.io/github/repo-size/aakriti0fnu/cheapBuy" alt="repo size">
-<img src="https://img.shields.io/github/repo-size/aakriti0fnu/cheapBuy" /></a>
-
-<a href="https://img.shields.io/tokei/lines/github/aakriti0fnu/cheapBuy" alt="total lines">
-<img src="https://img.shields.io/tokei/lines/github/aakriti0fnu/cheapBuy" /></a> 
-
-
+----
 <p align="center">
     <a href="https://github.com/aakriti0fnu/cheapBuy/issues/new/choose">Report Bug</a>
     ·
     <a href="https://github.com/aakriti0fnu/cheapBuy/issues/new/choose">Request Feature</a>
 </p>
 
+----
 ## 🚀 Demo 
 
 [![cheapBuy Extension](https://img.youtube.com/vi/Rd5pno8FuD4/0.jpg)](https://www.youtube.com/watch?v=Rd5pno8FuD4)
@@ -108,11 +109,13 @@
 
 <details open>
 <summary>PHASE-1: </summary>
-<li>  Fetching descirption of the user's current tab for ebay. </li>
-<li>  Fetching descirption of the user's current tab for Walmart. </li>
-<li>  Fetching descirption of the user's current tab for amazon. </li>
-<li>  Fetching descirption of the user's current tab for Bjs. </li>
-<li>  Fetching descirption of the user's current tab for Costco. </li>
+<br>
+<ul>
+<li>  Fetching description of the user's current tab for ebay. </li>
+<li>  Fetching description of the user's current tab for Walmart. </li>
+<li>  Fetching description of the user's current tab for amazon. </li>
+<li>  Fetching description of the user's current tab for Bjs. </li>
+<li>  Fetching description of the user's current tab for Costco. </li>
 <li>  Web Scrapping various product details from amazon. </li>
 <li>  Web Scrapping various product details from Ebay. </li>
 <li>  Exception handling of web scrapping. </li>
@@ -121,10 +124,13 @@
 <li>  Build an extension for this price comparison. </li>
 <li>  Extract knowledge like prices, sites, URL, comparison, description from scrapped data. </li>
 <li>  Show all the scrapped data and the knowledge gained on the extension page. </li>
+</ul>
 </details>
 
 <details open>
 <summary>PHASE-2 :</summary>
+<br>
+<ul>
 <li> Add a badge on the user's current tab. </li>
 <li> Improvement of extension UI. </li>
 <li> Alternate product suggestion feature. </li>
@@ -132,10 +138,12 @@
 <li> Add web scrapping for other websites such as Walmart, Bjs, Costco, etc. </li>
 <li> Improve code execution speed using multithreading. </li>
 <li> Show a avialable coupon on other shopping website. </li>
+</ul>
 </details>
 
 <details open>
 <summary>PHASE-3 :</summary>
+<br>
 <ul>
 <li> Automatic deployment of server using Teraform or ansible. </li>
 <li> Develop a website instead of extension. </li>
