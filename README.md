@@ -12,57 +12,57 @@
 **cheapBuy Extension** provides you ease to buy any product through your favourite website's like Amazon, Walmart, Ebay, Bjs, Costco, etc, by providing prices of the same product from all different websites to extension. It takes lot of time to search for the same product in different websites, and find the cheapest one, instead just add our extension **cheapBuy** and it will automatically fetch you price of the same product from different websites and you can directly compare the prices from different websites through our extension. In sum, **cheapBuy** is an one stop solution to buy the cheapest product online.
 
 ---
-[![Build Status](https://app.travis-ci.com/het-patel99/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/het-patel99/cheapBuy/builds/238891348)
+[![Build Status](https://app.travis-ci.com/aakriti0fnu/cheapBuy.svg?branch=main)](https://app.travis-ci.com/github/aakriti0fnu/cheapBuy/builds/238891348)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5540375.svg)](https://doi.org/10.5281/zenodo.5540375)
-[![codecov](https://codecov.io/gh/het-patel99/cheapBuy/branch/main/graph/badge.svg?token=6D5N39DIO7)](https://codecov.io/gh/het-patel99/cheapBuy)
-![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/unit_test.yml/badge.svg)
-![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/style_checker.yml/badge.svg)
-![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/main.yml/badge.svg)
-![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/code_cov.yml/badge.svg)
-![github workflow](https://github.com/het-patel99/cheapBuy/actions/workflows/close_as_a_feature.yml/badge.svg)
+[![codecov](https://codecov.io/gh/aakriti0fnu/cheapBuy/branch/dev_aakriti/graph/badge.svg?token=6D5N39DIO7)](https://codecov.io/gh/aakriti0fnu/cheapBuy)
+![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/unit_test.yml/badge.svg)
+![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/style_checker.yml/badge.svg)
+![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/main.yml/badge.svg)
+![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/code_cov.yml/badge.svg)
+![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/close_as_a_feature.yml/badge.svg)
 <!--Badges-->
-<a href="https://github.com/het-patel99/cheapBuy/blob/master/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy license" />
+<a href="https://github.com/aakriti0fnu/cheapBuy/blob/master/LICENSE" target="blank">
+<img src="https://img.shields.io/github/license/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy license" />
 </a>
-<a href="https://github.com/het-patel99/cheapBuy/fork" target="blank">
-<img src="https://img.shields.io/github/forks/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy forks"/>
+<a href="https://github.com/aakriti0fnu/cheapBuy/fork" target="blank">
+<img src="https://img.shields.io/github/forks/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy forks"/>
 </a>
-<a href="https://github.com/het-patel99/cheapBuy/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/het-patel99/cheapBuy?style=flat-square" alt="gcheapBuy stars"/>
+<a href="https://github.com/aakriti0fnu/cheapBuy/stargazers" target="blank">
+<img src="https://img.shields.io/github/stars/aakriti0fnu/cheapBuy?style=flat-square" alt="gcheapBuy stars"/>
 </a>
-<a href="https://github.com/het-patel99/cheapBuy/issues" target="blank">
-<img src="https://img.shields.io/github/issues/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy issues"/>
+<a href="https://github.com/aakriti0fnu/cheapBuy/issues" target="blank">
+<img src="https://img.shields.io/github/issues/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy issues"/>
 </a>
-<a href="https://github.com/het-patel99/cheapBuy/issues" target="blank">
-<img src="https://img.shields.io/github/issues-closed/het-patel99/cheapBuy" alt="cheapBuy issues closed"/>
+<a href="https://github.com/aakriti0fnu/cheapBuy/issues" target="blank">
+<img src="https://img.shields.io/github/issues-closed/aakriti0fnu/cheapBuy" alt="cheapBuy issues closed"/>
 </a>
-<a href="https://github.com/het-patel99/cheapBuy/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/het-patel99/cheapBuy?style=flat-square" alt="cheapBuy pull-requests"/>
+<a href="https://github.com/aakriti0fnu/cheapBuy/pulls" target="blank">
+<img src="https://img.shields.io/github/issues-pr/aakriti0fnu/cheapBuy?style=flat-square" alt="cheapBuy pull-requests"/>
 </a>
 
-<a href="https://github.com/het-patel99/cheapBuy/graphs/contributors" alt="Contributors">
-<img src="https://img.shields.io/github/contributors/het-patel99/cheapBuy" /></a>
+<a href="https://github.com/aakriti0fnu/cheapBuy/graphs/contributors" alt="Contributors">
+<img src="https://img.shields.io/github/contributors/aakriti0fnu/cheapBuy" /></a>
 
-<a href="https://github.com/sal0ni/cheapBuy/milestones" alt="milestones">
-<img src="https://img.shields.io/github/milestones/all/het-patel99/cheapBuy" /></a> 
+<a href="https://github.com/aakriti0fnu/cheapBuy/milestones" alt="milestones">
+<img src="https://img.shields.io/github/milestones/all/aakriti0fnu/cheapBuy" /></a> 
 
-<a href="https://github.com/sal0ni/cheapBuy/graphs/commit-activity" alt="commit activity">
-<img src="https://img.shields.io/github/commit-activity/w/het-patel99/cheapBuy" /></a> 
+<a href="https://github.com/aakriti0fnu/cheapBuy/graphs/commit-activity" alt="commit activity">
+<img src="https://img.shields.io/github/commit-activity/w/aakriti0fnu/cheapBuy" /></a> 
 
-<a href="https://github.com/sal0ni/cheapBuy/discussions" alt="discussion">
-<img src="https://img.shields.io/github/discussions/het-patel99/cheapBuy" /></a> 
+<a href="https://github.com/aakriti0fnu/cheapBuy/discussions" alt="discussion">
+<img src="https://img.shields.io/github/discussions/aakriti0fnu/cheapBuy" /></a> 
 
-<a href="https://img.shields.io/github/repo-size/het-patel99/cheapBuy" alt="repo size">
-<img src="https://img.shields.io/github/repo-size/het-patel99/cheapBuy" /></a>
+<a href="https://img.shields.io/github/repo-size/aakriti0fnu/cheapBuy" alt="repo size">
+<img src="https://img.shields.io/github/repo-size/aakriti0fnu/cheapBuy" /></a>
 
-<a href="https://img.shields.io/tokei/lines/github/het-patel99/cheapBuy" alt="total lines">
-<img src="https://img.shields.io/tokei/lines/github/het-patel99/cheapBuy" /></a> 
+<a href="https://img.shields.io/tokei/lines/github/aakriti0fnu/cheapBuy" alt="total lines">
+<img src="https://img.shields.io/tokei/lines/github/aakriti0fnu/cheapBuy" /></a> 
 
 
 <p align="center">
-    <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/aakriti0fnu/cheapBuy/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/het-patel99/cheapBuy/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/aakriti0fnu/cheapBuy/issues/new/choose">Request Feature</a>
 </p>
 
 ## 🚀 Demo 
@@ -78,7 +78,7 @@
 ---
 1. Clone the github repository at the preferable location in your system. You will need git to be preinstalled in the system. Once the repository is cloned in your system, with the help of cd command ,
 ```
-git clone https://github.com/het-patel99/cheapBuy.git
+git clone https://github.com/aakriti0fnu/cheapBuy.git
 cd cheapBuy
 ```
 2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
@@ -136,12 +136,10 @@ Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDU
 
 ## Contributors
 
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/het-patel99"><img src="https://avatars.githubusercontent.com/u/44945317?s=400&u=c05d1c4c8cf27c526d9d8c72b0725255500591cd&v=4" width="75px;" alt=""/><br /><sub><b>Het Patel</b></sub></a></td>
-    <td align="center"><a href="https://github.com/hvudeshi"><img src="https://avatars.githubusercontent.com/u/22682878?v=4" width="75px;" alt=""/><br /><sub><b>Hardik Udeshi</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/sal0ni"><img src="https://avatars.githubusercontent.com/u/37000199?v=4" width="75px;" alt=""/><br /><sub><b>Saloni Mahatma</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/kalgeekotak99"><img src="https://avatars.githubusercontent.com/u/43135408?v=4" width="75px;" alt=""/><br /><sub><b>Kalgee Kotak</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Vineet2311"><img src="https://avatars.githubusercontent.com/u/89501442?v=4" width="75px;" alt=""/><br /><sub><b>Vineet Chheda</b></sub></a><br /></td>
-  </tr>
-</table>
+[Aakriti](https://github.com/aakriti0fnu)
+
+[AshwinKumarMuniswamy](https://github.com/AshwinKumarMuniswamy)
+
+[Jainam Shah](https://github.com/j-08-shah)
+
+[Sharath Kumar](https://github.com/sharathKV)
