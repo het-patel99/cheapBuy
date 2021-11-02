@@ -12,7 +12,7 @@
 **cheapBuy Extension** provides you ease to buy any product through your favourite website's like Amazon, Walmart, Ebay, Bjs, Costco, etc, by providing prices of the same product from all different websites to extension. It takes lot of time to search for the same product in different websites, and find the cheapest one, instead just add our extension **cheapBuy** and it will automatically fetch you price of the same product from different websites and you can directly compare the prices from different websites through our extension. In sum, **cheapBuy** is an one stop solution to buy the cheapest product online.
 
 ---
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5540375.svg)](https://doi.org/10.5281/zenodo.5540375)
+[![DOI](https://zenodo.org/badge/414851795.svg)](https://zenodo.org/badge/latestdoi/414851795)
 [![codecov](https://codecov.io/gh/aakriti0fnu/cheapBuy/branch/dev_aakriti/graph/badge.svg?token=6D5N39DIO7)](https://codecov.io/gh/aakriti0fnu/cheapBuy)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/unit_test.yml/badge.svg)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/style_checker.yml/badge.svg)
