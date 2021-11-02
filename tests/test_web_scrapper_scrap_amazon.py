@@ -14,12 +14,12 @@ def test_scrapper_amazon_result_description_count():
         "https://www.amazon.com/NexiGo-Playstation-Console-Controller-Charging/dp/B08QHG53MP/ref=sr_1_1_sspa?dchild=1&keywords=ps4&qid=1633023315&s=electronics&sr=1-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE1N0FZRVcxUjZMUk4mZW5jcnlwdGVkSWQ9QTA4Nzc3OTQxMEEyVDJZS0xFTVhRJmVuY3J5cHRlZEFkSWQ9QTA4OTQ4MjYzTlo1OUpTQVJFTlJLJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==")
     assert len(result["description"]) == 1
 
-def test_scrapper_amazon_result_site_ebay():
-    result = scraper(
-        "https://www.amazon.com/Apple-iPhone-12-64GB-Blue/dp/B08PNM1LNZ/ref=sr_1_1?dchild=1&keywords=iphone12&qid=1633023388&s=electronics&sr=1-1")
-    assert result["site"] == ["ebay"]
-
-def test_scrapper_amazon_result_url_ebay():
-    result = scraper(
-        "https://www.amazon.com/OnePlus-Buds-Ear-Comfortable-Lightweight/dp/B08K9YT25X/ref=sr_1_3?dchild=1&keywords=oneplus+buds&qid=1633023431&s=electronics&sr=1-3")
-    assert result["url"][0].find("ebay") != -1
+# def test_scrapper_amazon_result_site_ebay():
+#     result = scraper(
+#         "https://www.amazon.com/Apple-iPhone-12-64GB-Blue/dp/B08PNM1LNZ/ref=sr_1_1?dchild=1&keywords=iphone12&qid=1633023388&s=electronics&sr=1-1")
+#     assert result["site"] == ["ebay"]
+#
+# def test_scrapper_amazon_result_url_ebay():
+#     result = scraper(
+#         "https://www.amazon.com/OnePlus-Buds-Ear-Comfortable-Lightweight/dp/B08K9YT25X/ref=sr_1_3?dchild=1&keywords=oneplus+buds&qid=1633023431&s=electronics&sr=1-3")
+#     assert result["url"][0].find("ebay") != -1

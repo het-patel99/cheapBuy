@@ -1,13 +1,5 @@
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 from ..code.web.scraper.scrap.walmart import get_url_walmart, scrap_walmart
-
-def setup_get_driver_details():
-    options = webdriver.ChromeOptions()
-    options.headless = True
-    driver = webdriver.Chrome(options=options, executable_path=ChromeDriverManager().install())
-    return driver
-
+from . import setup_get_driver_details
 
 def test_get_url_walmart_1():
     item_name = "SAMSUNG Galaxy Tab A7 32GB"

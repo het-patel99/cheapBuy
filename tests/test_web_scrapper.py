@@ -1,4 +1,4 @@
-from ..code.web.scraper.web_scraper import scraper
+from ..code.web.scraper.web_scraper import get_driver
 
 def test_get_driver():
-    assert scraper() is not None
+    assert get_driver() is not None
