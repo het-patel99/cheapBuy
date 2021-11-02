@@ -76,55 +76,73 @@
 ## 🛠️ Installation Steps
 
 ---
-1. Clone the github repository at the preferable location in your system. You will need git to be preinstalled in the system. Once the repository is cloned in your system, with the help of cd command ,
-```
-git clone https://github.com/aakriti0fnu/cheapBuy.git
-cd cheapBuy
-```
-2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
-```
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-3. Check out the demo video to know about the use of the extension.
+1. Clone this github repository at the preferable location in your system. You will need [git](https://git-scm.com/downloads) to be pre-installed in your system.
+    ```
+    git clone https://github.com/aakriti0fnu/cheapBuy.git
+    cd cheapBuy
+    ```
+2. This project uses Python3(`tested with >3.8 version`), so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are pre-installed.
+    ```
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    ```
+4. Check out the demo video to know about the use of the extension.
 
-## How to run it?
-```
-python code/web/server_api.py
-```
+## How to run it locally?
+- Run the server. 
+    ```
+    python code/web/server_api.py
+    ```
+- upload the extension into your browser of choice(`tested on chrome.`)
+  - go to `chrome` browser's settings
+  - select `Extensions`
+  - select `Load unpacked`
+  - select folder [extension](./code/extension)
+  Now, it's visible in your browser.
+- Choose a website of your choice among these [Amazon, ebay, bjs, Walmart, Costco] for an item.
+- Once you've selected the item on a site, click on the extension icon and wait for a few seconds to see the suggestions.
 
+    
 ## Plan of Action :
-## PHASE-1
-1. Fetching descirption of the user's current tab for ebay.
-2. Fetching descirption of the user's current tab for Walmart.
-3. Fetching descirption of the user's current tab for amazon.
-4. Fetching descirption of the user's current tab for Bjs.
-5. Fetching descirption of the user's current tab for Costco.
-6. Web Scrapping various product details from amazon.
-7. Web Scrapping various product details from Ebay.
-8. Exception handling of web scrapping.
-9. Server API for web scrapping.
-10. Deploying server on AWS.
-11. Build an extension for this price comparison.
-12. Extract knowledge like prices, sites, URL, comparison, description from scrapped data.
-13. Show all the scrapped data and the knowledge gained on the extension page.
 
-## PHASE-2
-1. Add a badge on the user's current tab.
-2. Improvement of extension UI.
-3. Alternate product suggestion feature.
-4. Improve accuracy of the product. Example : If user's current tab is having Television of a particular brand and there is a better option available at a cheaper or comparable rate than provide alternative product accordingly.
-5. Add web scrapping for other websites such as Walmart, Bjs, Costco, etc.
-6. Improve code execution speed using multithreading.
-7. Show a avialable coupon on other shopping website.
+<details open>
+<summary>PHASE-1: </summary>
+<li>  Fetching descirption of the user's current tab for ebay. </li>
+<li>  Fetching descirption of the user's current tab for Walmart. </li>
+<li>  Fetching descirption of the user's current tab for amazon. </li>
+<li>  Fetching descirption of the user's current tab for Bjs. </li>
+<li>  Fetching descirption of the user's current tab for Costco. </li>
+<li>  Web Scrapping various product details from amazon. </li>
+<li>  Web Scrapping various product details from Ebay. </li>
+<li>  Exception handling of web scrapping. </li>
+<li>  Server API for web scrapping. </li>
+<li>  Deploying server on AWS. </li>
+<li>  Build an extension for this price comparison. </li>
+<li>  Extract knowledge like prices, sites, URL, comparison, description from scrapped data. </li>
+<li>  Show all the scrapped data and the knowledge gained on the extension page. </li>
+</details>
 
-## PHASE-3
-1. Automatic deployment of server using Teraform or ansible.
-2. Develop a website instead of extension.
-3. Dashboard including how many user's click on the website.
-4. Email notification of the available coupon to the user.
+<details open>
+<summary>PHASE-2 :</summary>
+<li> Add a badge on the user's current tab. </li>
+<li> Improvement of extension UI. </li>
+<li> Alternate product suggestion feature. </li>
+<li> Improve accuracy of the product. Example : If user's current tab is having Television of a particular brand and there is a better option available at a cheaper or comparable rate than provide alternative product accordingly. </li>
+<li> Add web scrapping for other websites such as Walmart, Bjs, Costco, etc. </li>
+<li> Improve code execution speed using multithreading. </li>
+<li> Show a avialable coupon on other shopping website. </li>
+</details>
 
+<details open>
+<summary>PHASE-3 :</summary>
+<ul>
+<li> Automatic deployment of server using Teraform or ansible. </li>
+<li> Develop a website instead of extension. </li>
+<li> Dashboard including how many user's click on the website. </li>
+<li> Email notification of the available coupon to the user. </li>
+</ul>
+</details>
 
 🌟 You are all set!
 
@@ -133,13 +151,9 @@ Please contribute using [GitHub Flow](https://guides.github.com/introduction/flo
 
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
-
 ## Contributors
 
-[Aakriti](https://github.com/aakriti0fnu)
-
-[AshwinKumarMuniswamy](https://github.com/AshwinKumarMuniswamy)
-
-[Jainam Shah](https://github.com/j-08-shah)
-
-[Sharath Kumar](https://github.com/sharathKV)
+- [Aakriti](https://github.com/aakriti0fnu)
+- [AshwinKumarMuniswamy](https://github.com/AshwinKumarMuniswamy)
+- [Jainam Shah](https://github.com/j-08-shah)
+- [Sharath Kumar](https://github.com/sharathKV)
