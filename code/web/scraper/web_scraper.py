@@ -27,8 +27,8 @@ def set_results(to, from_):
 	to['price'].append(from_['price'])
 	to['site'].append(from_['site'])
 	
-def search_amazon(driver, description, results):
-	result_dict_amazon = extract_item_amazon(driver, description)
+def search_amazon(description, results):
+	result_dict_amazon = extract_item_amazon(description)
 	if result_dict_amazon != {}:
 		print(f"Amazon price: {result_dict_amazon['price']}")
 		set_results(results, result_dict_amazon)
@@ -48,8 +48,8 @@ def search_walmart(driver, description, results):
 def search_costco(driver, description, results):
 	pass
 
-def search_ebay(driver, description, results):
-	result_dict_ebay = extract_item_ebay(driver, description)
+def search_ebay(description, results):
+	result_dict_ebay = extract_item_ebay(description)
 	if result_dict_ebay != {}:
 		print(f"Ebay price: {result_dict_ebay['price']}")
 		set_results(results, result_dict_ebay)
@@ -58,7 +58,7 @@ def search_ebay(driver, description, results):
 def scraper(link):
 	print('\n \t\t\t\t\t\t\t ****** User request Started.******\n')
 
-	driver = get_driver()
+	# driver = get_driver()
 
 	print(f'User selected url: \n {link}')
 	print('-'*10)	
@@ -69,10 +69,10 @@ def scraper(link):
 		print('User selected amazon')
 		description = description_from_url_amazon(link)
 		if description:
-			print(f"***** Let's search >>{description}<< \n on Ebay *****")
+			print(f"***** Let's search >>{description.title}<< \n on Ebay *****")
 			print('-'*5)
 			# search item on Ebay!
-			search_ebay(driver, description, results)
+			search_ebay(description, results)
 			return results
 		else:
 			return ''
@@ -84,7 +84,7 @@ def scraper(link):
 			print(f"***** Let's search >>{description}<< \n on amazon *****")
 			print('-'*5)
 			# search item on amazon!
-			search_amazon(driver, description, results)
+			search_amazon(description, results)
 			return results
 		else:
 			return ''
@@ -96,10 +96,10 @@ def scraper(link):
 			print(f"***** Let's search >>{description}<< \n on amazon and ebay *****")
 			print('-'*5)
 			# search item on amazon!
-			search_amazon(driver, description, results)
+			search_amazon(description, results)
 			print('-'*5)
 			# search item on ebay!
-			search_ebay(driver, description, results)
+			search_ebay(description, results)
 			return results
 		else:
 			return ''
@@ -111,10 +111,10 @@ def scraper(link):
 			print(f"***** Let's search >>{description}<< \n on amazon and ebay *****")
 			print('-'*5)
 			# search item on amazon!
-			search_amazon(driver, description, results)
+			search_amazon(description, results)
 			print('-'*5)
 			# search item on ebay!
-			search_ebay(driver, description, results)
+			search_ebay(description, results)
 			return results
 		else:
 			return ''
@@ -126,10 +126,10 @@ def scraper(link):
 			print(f"***** Let's search >>{description}<< \n on amazon and ebay *****")
 			print('-'*5)
 			# search item on amazon!
-			search_amazon(driver, description, results)
+			search_amazon(description, results)
 			print('-'*5)
 			# search item on ebay!
-			search_ebay(driver, description, results)
+			search_ebay(description, results)
 			return results	
 		else:
 			return ''		
