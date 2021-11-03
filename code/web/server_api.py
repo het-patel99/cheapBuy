@@ -21,8 +21,7 @@ class Scrap(Resource):
         args = parser.parse_args()
         print(">>>" * 5)
         results = scraper(args["link"])
-
-        if results is "":
+        if results == "":
             print("Failed to find the item")
             return results, 404
 
@@ -38,8 +37,6 @@ class Scrap(Resource):
 						Sorry for any inconvinience \n"
             )
             return results, 404
-
-        if results:
             print(json.dumps(results, indent=4, sort_keys=True))
             return results, 200
 

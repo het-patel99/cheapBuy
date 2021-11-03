@@ -23,8 +23,12 @@ def get_driver():
     # Chrome
     option = webdriver.ChromeOptions()
     option.add_argument("--headless")
-    option.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36')
-    chrome_browser = webdriver.Chrome(options=option, executable_path=ChromeDriverManager().install() )
+    option.add_argument(
+        "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+    )
+    chrome_browser = webdriver.Chrome(
+        options=option, executable_path=ChromeDriverManager().install()
+    )
 
     # Firefox
     useragent = "Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
@@ -34,15 +38,22 @@ def get_driver():
     options = webdriver.FirefoxOptions()
     options.set_preference("dom.webnotifications.serviceworker.enabled", False)
     options.set_preference("dom.webnotifications.enabled", False)
-    options.add_argument('--headless')
-    firefox_browser = webdriver.Firefox(firefox_profile=profile, options=options, executable_path=GeckoDriverManager().install())
+    options.add_argument("--headless")
+    firefox_browser = webdriver.Firefox(
+        firefox_profile=profile,
+        options=options,
+        executable_path=GeckoDriverManager().install(),
+    )
 
     return chrome_browser, firefox_browser
 
+
 def get_agent():
     agent = {
-        "User-Agent": 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'}
+        "User-Agent": "Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36"
+    }
     return agent
+
 
 def set_results(to, from_):
     """

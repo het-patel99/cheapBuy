@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
+
 def get_url_costco(search_term):
     """
 
@@ -25,7 +26,10 @@ def scrap_costco(driver, search_term):
         url = get_url_costco(search_term)
         driver.get(url)
         soup = BeautifulSoup(driver.page_source, "html.parser")
-        with open("/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html", 'w') as fileptr:
+        with open(
+            "/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html",
+            "w",
+        ) as fileptr:
             fileptr.write(str(soup))
         results = soup.find_all("div", {"class": "product-tile-set"})
 
