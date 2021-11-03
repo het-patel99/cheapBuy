@@ -1,22 +1,15 @@
-from selenium import webdriver
-from webdriver_manager.chrome import ChromeDriverManager
 from ..code.web.scraper.scrap.bjs import get_url_bjs, scrap_bjs
-
-
-def setup_get_driver_details():
-    options = webdriver.ChromeOptions()
-    options.headless = True
-    driver = webdriver.Chrome(options=options, executable_path=ChromeDriverManager().install())
-    return driver
+from . import setup_get_driver_details
 
 
 def test_get_url_bjs_1():
     item_name = "Amazfit Band 5 Fitness Tracker with Alexa Built-in"
-    assert get_url_bjs(item_name) == "https://www.bjs.com/search/Amazfit Band 5 Fitness Tracker with Alexa Built-in"
+    assert get_url_bjs(item_name) == f"https://www.bjs.com/search/{item_name}"
 
 
 def test_get_url_bjs_2():
-    assert get_url_bjs("Brita Longlast Replacement Filters Dispensers") == "https://www.bjs.com/search/Brita Longlast Replacement Filters Dispensers"
+    item_name = "Brita Longlast Replacement Filters Dispensers"
+    assert get_url_bjs(item_name) == f"https://www.bjs.com/search/{item_name}"
 
 
 def test_scrap_bjs():
