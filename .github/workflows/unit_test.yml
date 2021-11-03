@@ -18,9 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          echo requirements installed
       - name: Run tests
         run: |
-          cd tests
           pip install pytest
           pytest
