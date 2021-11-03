@@ -49,10 +49,7 @@ def extract_item_bjs(driver, search_term):
             price += i
         else:
             break
-    # print(price)
     result["price"] = price
-
-    # print(result["price"])
     result["site"] = "bjs"
     # print(f"The item belongs to the site: {result['site']}")
     return result

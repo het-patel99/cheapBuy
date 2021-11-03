@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 
-
 def get_url_costco(search_term):
     """
 
@@ -26,7 +25,10 @@ def scrap_costco(driver, search_term):
         url = get_url_costco(search_term)
         driver.get(url)
         soup = BeautifulSoup(driver.page_source, "html.parser")
+        with open("/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html", 'w') as fileptr:
+            fileptr.write(str(soup))
         results = soup.find_all("div", {"class": "product-tile-set"})
+
     except:
         results = []
     return results
@@ -49,24 +51,11 @@ def extract_item_costco(driver, search_term):
         print(f"Found {len(results)} items on the Costco, picking the 1st one.")
         item = results[0]
         atag = item.find("a", {"automation-id": "productDescriptionLink_0"})
-        print(atag)
-        print("______________________________")
-        result["description"] = item.find("span", {"class": "description"})
-        print(result["description"])
-        print("______________________________")
-        result["url"] = "https://www.costco.com" + atag.get("href")
-        print(result["url"])
-        print("______________________________")
-        # price_parent = item.find('span', 'a-price')
-        # print(result['description'])
-        # print("______________________________")
-        # item_price= price_parent.find('span', 'a-offscreen').text.strip('$')
-        # print("______________________________")
-        # print(f'Amazon {search_term} price : {item_price}')
+        result["description"] = atag.text
+        result["url"] = atag.get("href")
         result["price"] = (
             item.find("div", {"class": "price"}).get_text().strip().strip("$")
         )
-        # result['price'] = item_price
         result["site"] = "Costco"
     except:
         print("Scraping failed for Costco")
