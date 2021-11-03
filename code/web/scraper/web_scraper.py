@@ -56,7 +56,7 @@ def get_agent():
 
 
 def set_results(to, from_):
-    """
+"""
     sets the main results dict.
     :param to:
     :param from_:
@@ -66,21 +66,14 @@ def set_results(to, from_):
     to["description"].append(from_["description"])
     to["price"].append(from_["price"])
     to["site"].append(from_["site"])
-
-
-def search_amazon(driver, description, results):
-    """
-
-    :param driver:
-    :param description:
-    :param results:
-    :return:
-    """
-    result_dict_amazon = extract_item_amazon(driver, description)
-    if result_dict_amazon != {}:
-        print(f"Amazon price: {result_dict_amazon['price']}")
-        set_results(results, result_dict_amazon)
-    pass
+	
+def search_amazon(description, results):
+	result_dict_amazon = extract_item_amazon(description)
+	if result_dict_amazon != {}:
+		print(f"Amazon price: {result_dict_amazon['price']}")
+		set_results(results, result_dict_amazon)
+=======
+    
 
 
 def search_bjs(driver, description, results):
@@ -131,8 +124,13 @@ def search_costco(driver, description, results):
     pass
 
 
-def search_ebay(driver, description, results):
-    """
+
+def search_ebay(description, results):
+	result_dict_ebay = extract_item_ebay(description)
+	if result_dict_ebay != {}:
+		print(f"Ebay price: {result_dict_ebay['price']}")
+		set_results(results, result_dict_ebay)
+
 
     :param driver:
     :param description:
@@ -145,6 +143,7 @@ def search_ebay(driver, description, results):
         print(f"Ebay price: {result_dict_ebay['price']}")
         set_results(results, result_dict_ebay)
     pass
+
 
 
 def scraper(link):

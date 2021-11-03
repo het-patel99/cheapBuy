@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
               
         var headers = {}
         // console.log("***** Item Search Started on source site! *****")
-        const response = await fetch('http://0.0.0.0:8080/scrap?link='+tabs[0].url, {
+        const response = await fetch('http://127.0.0.1:8080/scrap?link='+tabs[0].url, {
             method: 'POST',
             headers: headers
           });

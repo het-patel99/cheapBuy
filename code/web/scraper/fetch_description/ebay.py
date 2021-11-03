@@ -3,6 +3,7 @@ import requests
 
 
 def description_from_url_ebay(link):
+
     """
 
     :param link:
@@ -22,4 +23,5 @@ def description_from_url_ebay(link):
         print("Can't pull the description from Ebay url.")
         title = ""
     print("-" * 10)
+
     return title

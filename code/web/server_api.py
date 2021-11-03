@@ -46,3 +46,4 @@ class Scrap(Resource):
 api.add_resource(Scrap, "/scrap")
 if __name__ == "__main__":
     app.run(debug=True, port=8080, host="0.0.0.0")  # run our Flask app
+
