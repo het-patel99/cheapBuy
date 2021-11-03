@@ -14,10 +14,8 @@
 ---
 [![DOI](https://zenodo.org/badge/414851795.svg)](https://zenodo.org/badge/latestdoi/414851795)
 [![codecov](https://codecov.io/gh/aakriti0fnu/cheapBuy/branch/main/graph/badge.svg?token=RPMXKRMO59)](https://codecov.io/gh/aakriti0fnu/cheapBuy)
-
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/unit_test.yml/badge.svg)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/style_checker.yml/badge.svg)
-![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/main.yml/badge.svg)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/code_cov.yml/badge.svg)
 ![github workflow](https://github.com/aakriti0fnu/cheapBuy/actions/workflows/close_as_a_feature.yml/badge.svg)
 ---
