@@ -4,19 +4,19 @@ from bs4 import BeautifulSoup
 
 def get_url_amazon(search_term):
     try:
+
         print(search_term)
         modified_search_term = search_term.replace(' ', '+')
         modified_search_term = modified_search_term.replace(',', '%2C')
         template = F"https://www.amazon.com/s?k={modified_search_term}%2C114&ref=nb_sb_noss"
-        # template = 'https://www.amazon.com'+'/s?k={}&ref=nb_sb_ss_ts-doa-p_3_5'
-
-        # search_term = search_term.replace(' ','+')
-        # template = template.format(search_term)
+    
     except:
         print("here")
         template = ''
     print(f"Constructed amazon URL: \n {template}")
     return template
+
+
 
 
 def scrap_amazon(search_term):
@@ -60,5 +60,4 @@ def extract_item_amazon(search_term):
         result['site'] = 'amazon'
     except:
         print('Scraping failed for amazon')
-        result = {}
-    return result
+

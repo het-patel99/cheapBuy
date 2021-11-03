@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 
 def get_url_ebay(search_term):
+
     try:
         modified_search_term = search_term.title.replace(' ', '%20')
         template = F"https://www.ebay.com/sch/i.html?_from=R40&_nkw={modified_search_term}&_sacat=0&rt=nc&_udlo=0&_udhi=" \

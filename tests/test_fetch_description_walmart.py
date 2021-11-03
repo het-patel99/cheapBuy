@@ -1,10 +1,13 @@
 from ..code.web.scraper.fetch_description.walmart import description_from_url_walmart
 
 
-
 def test_fetch_description_walmart1():
     link = "https://www.walmart.com/ip/Oreo-Chocolate-Hazelnut-Flavored-Creme-Chocolate-Sandwich-Cookies-Family-Size-17-Oz/720352647"
-    assert description_from_url_walmart(link) == "Oreo Chocolate Hazelnut Flavored Creme Chocolate Sandwich Cookies Family Size 17 Oz"
+    assert (
+        description_from_url_walmart(link)
+        == "Oreo Chocolate Hazelnut Flavored Creme Chocolate Sandwich Cookies Family Size 17 Oz"
+    )
+
 
 def test_fetch_description_walmart2():
     link = "https://www.walmart.com/ip/Time-and-Tru-Shaker-Cardigan/530065539"

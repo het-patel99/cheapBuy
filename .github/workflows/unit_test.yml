@@ -2,11 +2,10 @@ name: Run Tests On Push
 on:
   push:
     branches:
-      - main
+      - dev_aakriti
   pull_request:
     branches:
-      - main
-
+      - dev_aakriti
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,9 +18,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          echo requirements installed
       - name: Run tests
         run: |
-          cd test 
           pip install pytest
           pytest

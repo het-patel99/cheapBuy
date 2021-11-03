@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 
 def description_from_url_amazon(link):
+
     headers = {'Host': 'www.amazon.com',
                'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) '
                              'Chrome/44.0.2403.157 Safari/537.36',
@@ -20,3 +21,4 @@ def description_from_url_amazon(link):
     print(F"Extracted price: {product_price.string}")
     description = namedtuple("Description", "title price")
     return description(product_title_string, product_price.string.replace('$', ''))
+
