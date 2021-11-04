@@ -182,7 +182,6 @@ def scraper(link: str) -> dict:
         if description:
             # print(F"Let's search for item: {description.title} price: {description.price} on Ebay, costco, bjs, walmart")
             # searching item!
-            # search_ebay(chrome, description, results)
             results = search_ebay(description, results)
             # search_costco(chrome, description, results)
             results = search_costco(description, results)
@@ -198,7 +197,6 @@ def scraper(link: str) -> dict:
         if description:
             # print(f"***** Let's search >>{description}<< \n on amazon, costco, bjs, walmart *****")
             # searching item!
-            # search_amazon(chrome, description, results)
             results = search_amazon(description, results)
     #         search_costco(chrome, description, results)
     #         search_bjs(chrome, description, results)
@@ -215,10 +213,10 @@ def scraper(link: str) -> dict:
                 f"***** Let's search >>{description}<< \n on amazon, costco, bjs, ebay *****"
             )
             # searching item!
-            search_amazon(chrome, description, results)
+            results = search_amazon(description, results)
             search_costco(chrome, description, results)
             search_bjs(chrome, description, results)
-            search_ebay(chrome, description, results)
+            results = search_ebay(description, results)
             return results
         else:
             return ""
@@ -231,8 +229,8 @@ def scraper(link: str) -> dict:
                 f"***** Let's search >>{description}<< \n on amazon, ebay, bjs, walmart *****"
             )
             # searching item!
-            search_amazon(chrome, description, results)
-            search_ebay(chrome, description, results)
+            results = search_amazon(description, results)
+            results = search_ebay(description, results)
             search_bjs(chrome, description, results)
             search_walmart(chrome, description, results)
             return results
@@ -247,8 +245,8 @@ def scraper(link: str) -> dict:
                 f"***** Let's search >>{description}<< \n on amazon, ebay, costco, walmart *****"
             )
             # searching item!
-            search_amazon(chrome, description, results)
-            search_ebay(chrome, description, results)
+            results = search_amazon(description, results)
+            results = search_ebay(chrome, description, results)
             search_costco(chrome, description, results)
             search_walmart(chrome, description, results)
             return results
