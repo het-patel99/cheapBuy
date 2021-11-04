@@ -16,10 +16,10 @@
 ||Use of code formatters. ||
 ||Use of style checkers ||
 ||Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | |
-|3|test cases exist  | dozens of tests and those test cases are more than 30% of the code base|
-|3|Use of code coverage  | config files in GH|
-|1|other automated analysis tools  | config files in GH|
-|2|test cases:.a large proportion of the issues related to handling failing cases. | if a test case fails, open an issue and fix it|
-|3|test cases are routinely executed | e.g. travis-com.com or github actions or something|
+|3|test cases exist ||
+|3|Use of code coverage ||
+|0|other automated analysis tools  ||
+|2|test cases:.a large proportion of the issues related to handling failing cases. ||
+|3|test cases are routinely executed | e.g. travis-com.com or github actions or something||
 |3|Documentation describing how this version improves on the older version| 
 ||This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment| 
