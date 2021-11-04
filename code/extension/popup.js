@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
         chrome.browserAction.setBadgeBackgroundColor({ color: '#00FF00' }, () => {
-            chrome.browserAction.setBadgeText({ text: myJson });
+            chrome.browserAction.setBadgeText({ text: myJson.length });
         });
         dialogBox.innerHTML = web_response;
     });
