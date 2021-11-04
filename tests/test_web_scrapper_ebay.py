@@ -1,42 +1,24 @@
+from collections import namedtuple
 from ..code.web.scraper.scrap.ebay import get_url_ebay, scrap_ebay, extract_item_ebay
+import bs4
 from . import setup_get_driver_details
 
 
-def test_get_url_ebay_1():
-    item_name = "2021 Apple 10 2 inch iPad Wi Fi"
-    search_term = item_name.replace("%20", " ")
-    assert (
-        get_url_ebay(item_name)
-        == f"https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={search_term}"
-    )
-
-
-def test_get_url_ebay_2():
-    item_name = "Brita Longlast Replacement Filters Dispensers"
-    search_term = item_name.replace("%20", " ")
-    assert (
-        get_url_ebay(item_name)
-        == f"https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw={search_term}"
-    )
+def test_get_url_ebay():
+    description = namedtuple("description", "title price")
+    description.title = 'PS5 IN HAND - NEW Playstation 5 Digital Edition White Console System LATEST'
+    description.price = '899.00'
+    link = "https://www.ebay.com/sch/i.html?_from=R40&_nkw=PS5%20IN%20HAND%20-%20NEW%20Playstation%205%20Digital%20" \
+           "Edition%20White%20Console%20System%20LATEST&_sacat=0&rt=nc&_udlo=0&_udhi=899.00"
+    assert (get_url_ebay(description) == "https://www.ebay.com/sch/i.html?_from=R40&_nkw=PS5%20IN%20HAND%20-%20NEW%20"
+                                         "Playstation%205%20Digital%20Edition%20White%20Console%20System%20LATEST"
+                                         "&_sacat=0&rt=nc&_udlo=0&_udhi=899.00")
 
 
 def test_scrap_ebay():
-    item_name = "W. Trends Sunset Twin-Size Metal Bunk Bed - Black"
-    results = scrap_ebay(setup_get_driver_details(), item_name)
-    assert results is not None
-
-
-# def test_extract_item_ebay_result_len():
-#     item_name = "Brita Longlast Replacement Filters Dispensers"
-#     result = extract_item_ebay(setup_get_driver_details(), item_name)
-#     assert len(result) == 4
-#
-# def test_extract_item_ebay_result_site():
-#     item_name = "Amazfit Band 5 Fitness Tracker with Alexa Built-in"
-#     result = extract_item_ebay(setup_get_driver_details(), item_name)
-#     assert result["site"] == "ebay"
-#
-# def test_extract_item_ebay_result_url():
-#     item_name = "SAMSUNG Galaxy Tab A7 32GB"
-#     result = extract_item_ebay(setup_get_driver_details(), item_name)
-#     assert result["url"].find("https://www.ebay.com") != -1
+    description = namedtuple("description", "title price")
+    description.title = 'PS5 IN HAND - NEW Playstation 5 Digital Edition White Console System LATEST'
+    description.price = '899.00'
+    result = scrap_ebay(description)
+    result_type = isinstance(result, bs4.element.ResultSet)
+    assert result_type is True

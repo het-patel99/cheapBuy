@@ -173,7 +173,7 @@ def scraper(link: str) -> dict:
     """
     print(" User request started ".center(80, '*'))
 
-    # chrome, firefox = get_driver()
+    chrome, firefox = get_driver()
     results = {"url": [], "description": [], "price": [], "site": []}
 
     if "amazon.com" in link:
@@ -182,12 +182,10 @@ def scraper(link: str) -> dict:
         if description:
             # print(F"Let's search for item: {description.title} price: {description.price} on Ebay, costco, bjs, walmart")
             # searching item!
-            # search_ebay(chrome, description, results)
-            # results = search_ebay(description, results)
-            # search_costco(chrome, description, results)
+            results = search_ebay(description, results)
             results = search_costco(description, results)
-            # search_bjs(chrome, description, results)
-            # search_walmart(chrome, description, results)
+            search_bjs(chrome, description, results)
+            search_walmart(chrome, description, results)
             return results
         else:
             return ""
@@ -198,61 +196,60 @@ def scraper(link: str) -> dict:
         if description:
             # print(f"***** Let's search >>{description}<< \n on amazon, costco, bjs, walmart *****")
             # searching item!
-            # search_amazon(chrome, description, results)
             results = search_amazon(description, results)
-    #         search_costco(chrome, description, results)
-    #         search_bjs(chrome, description, results)
-    #         search_walmart(chrome, description, results)
+            search_costco(chrome, description, results)
+            search_bjs(chrome, description, results)
+            search_walmart(chrome, description, results)
             return results
-    #     else:
-    #         return ""
-    #
-    # if "walmart.com" in link:
-    #     print(f"User is on Walmart with URL: \n {link}")
-    #     description = description_from_url_walmart(link)
-    #     if description:
-    #         print(
-    #             f"***** Let's search >>{description}<< \n on amazon, costco, bjs, ebay *****"
-    #         )
-    #         # searching item!
-    #         search_amazon(chrome, description, results)
-    #         search_costco(chrome, description, results)
-    #         search_bjs(chrome, description, results)
-    #         search_ebay(chrome, description, results)
-    #         return results
-    #     else:
-    #         return ""
-    #
-    # if "costco.com" in link:
-    #     print(f"User is on Costco with URL: \n {link}")
-    #     description = description_from_url_costco(link)
-    #     if description:
-    #         print(
-    #             f"***** Let's search >>{description}<< \n on amazon, ebay, bjs, walmart *****"
-    #         )
-    #         # searching item!
-    #         search_amazon(chrome, description, results)
-    #         search_ebay(chrome, description, results)
-    #         search_bjs(chrome, description, results)
-    #         search_walmart(chrome, description, results)
-    #         return results
-    #     else:
-    #         return ""
-    #
-    # if "bjs.com" in link:
-    #     print(f"User is on Bjs with URL: \n {link}")
-    #     description = description_from_url_bjs(link)
-    #     if description:
-    #         print(
-    #             f"***** Let's search >>{description}<< \n on amazon, ebay, costco, walmart *****"
-    #         )
-    #         # searching item!
-    #         search_amazon(chrome, description, results)
-    #         search_ebay(chrome, description, results)
-    #         search_costco(chrome, description, results)
-    #         search_walmart(chrome, description, results)
-    #         return results
-    #     else:
-    #         return ""
+        else:
+            return ""
+
+    if "walmart.com" in link:
+        print(f"User is on Walmart with URL: \n {link}")
+        description = description_from_url_walmart(link)
+        if description:
+            print(
+                f"***** Let's search >>{description}<< \n on amazon, costco, bjs, ebay *****"
+            )
+            # searching item!
+            results = search_amazon(description, results)
+            search_costco(chrome, description, results)
+            search_bjs(chrome, description, results)
+            results = search_ebay(description, results)
+            return results
+        else:
+            return ""
+
+    if "costco.com" in link:
+        print(f"User is on Costco with URL: \n {link}")
+        description = description_from_url_costco(link)
+        if description:
+            print(
+                f"***** Let's search >>{description}<< \n on amazon, ebay, bjs, walmart *****"
+            )
+            # searching item!
+            results = search_amazon(description, results)
+            results = search_ebay(description, results)
+            search_bjs(chrome, description, results)
+            search_walmart(chrome, description, results)
+            return results
+        else:
+            return ""
+
+    if "bjs.com" in link:
+        print(f"User is on Bjs with URL: \n {link}")
+        description = description_from_url_bjs(link)
+        if description:
+            print(
+                f"***** Let's search >>{description}<< \n on amazon, ebay, costco, walmart *****"
+            )
+            # searching item!
+            results = search_amazon(description, results)
+            results = search_ebay(chrome, description, results)
+            search_costco(chrome, description, results)
+            search_walmart(chrome, description, results)
+            return results
+        else:
+            return ""
 
     print("\n \t\t\t\t\t\t\t ****** User request finished.******")
