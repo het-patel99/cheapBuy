@@ -183,10 +183,9 @@ def scraper(link: str) -> dict:
             # print(F"Let's search for item: {description.title} price: {description.price} on Ebay, costco, bjs, walmart")
             # searching item!
             results = search_ebay(description, results)
-            # search_costco(chrome, description, results)
             results = search_costco(description, results)
-            # search_bjs(chrome, description, results)
-            # search_walmart(chrome, description, results)
+            search_bjs(chrome, description, results)
+            search_walmart(chrome, description, results)
             return results
         else:
             return ""
@@ -198,9 +197,9 @@ def scraper(link: str) -> dict:
             # print(f"***** Let's search >>{description}<< \n on amazon, costco, bjs, walmart *****")
             # searching item!
             results = search_amazon(description, results)
-    #         search_costco(chrome, description, results)
-    #         search_bjs(chrome, description, results)
-    #         search_walmart(chrome, description, results)
+            search_costco(chrome, description, results)
+            search_bjs(chrome, description, results)
+            search_walmart(chrome, description, results)
             return results
         else:
             return ""
