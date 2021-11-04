@@ -154,13 +154,13 @@
 🌟 You are all set!
 
 ## 🍰 Contributing
-Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/het=patel99/cheapBuy/compare).
+Please contribute using [GitHub Flow](https://guides.github.com/introduction/flow). Create a branch, add commits, and [open a pull request](https://github.com/aakriti0fnu/cheapBuy/pulls).
 
 Please read [`CONTRIBUTING`](CONTRIBUTING.md) for details on our [`CODE OF CONDUCT`](CODE_OF_CONDUCT.md), and the process for submitting pull requests to us.
 
 ## Contributors
 
 - [Aakriti](https://github.com/aakriti0fnu)
-- [AshwinKumarMuniswamy](https://github.com/AshwinKumarMuniswamy)
+- [Ashwin Kumar Muniswamy](https://github.com/AshwinKumarMuniswamy)
 - [Jainam Shah](https://github.com/j-08-shah)
 - [Sharath Kumar](https://github.com/sharathKV)
