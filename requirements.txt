@@ -6,3 +6,4 @@ Flask-RESTful
 Flask-Cors
 beautifulsoup4
 pytest
+lxml
