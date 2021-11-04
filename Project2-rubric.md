@@ -11,15 +11,14 @@
 |2|Number of commits: by different people  |[Number of Commits](https://github.com/aakriti0fnu/cheapBuy/graphs/commit-activity)|
 |2|issues are being closed |[Closed Issues](https://github.com/aakriti0fnu/cheapBuy/issues?q=is%3Aissue+is%3Aclosed)|
 |2|issues are discussed before they are closed | every issue is dicussed by all, then assigned to one appropriate person for closure. The issue is tied to a PR and closed when merged.|
-||Use of syntax checkers. | config files iin GH showing this checker's config|
-||Issues reports: there are many  | |
-||Use of code formatters. ||
-||Use of style checkers ||
-||Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | |
-|3|test cases exist ||
-|3|Use of code coverage ||
-|0|other automated analysis tools  ||
-|2|test cases:.a large proportion of the issues related to handling failing cases. ||
-|3|test cases are routinely executed | e.g. travis-com.com or github actions or something||
-|3|Documentation describing how this version improves on the older version| 
-||This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment| 
+|2|Use of syntax checkers. |[style checkers](https://github.com/aakriti0fnu/cheapBuy/blob/main/.github/workflows/style_checker.yml)|
+|2|Issues reports: there are many |[Issues](https://github.com/aakriti0fnu/cheapBuy/issues)|
+|3|Use of code formatters|[code formatters](https://github.com/aakriti0fnu/cheapBuy/blob/main/.github/workflows/code_formatter.yml)|
+||Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code|[Video]()|
+|3|test cases exist |[test cases](https://github.com/aakriti0fnu/cheapBuy/tree/main/tests)|
+|3|Use of code coverage |[code coverage](https://github.com/aakriti0fnu/cheapBuy/blob/main/.github/workflows/lint_test_cov.yml)|
+|3|other automated analysis tools |[automated test suite](https://github.com/aakriti0fnu/cheapBuy/blob/main/.github/workflows/lint_test_cov.yml)|
+|2|test cases:.a large proportion of the issues related to handling failing cases |Each test accounts for failing scenarios|
+|2|test cases are routinely executed |on push or pull requests, tests are run |
+|3|Documentation describing how this version improves on the older version||
+||This version is a little(1), some(2), much(3) improved on the last version|Tutor's assessment| 
