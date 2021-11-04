@@ -1,4 +1,4 @@
-|Score|Notes| Evidence|
+|Self Assessment Score|Notes| Evidence|
 |-|-----|---------|
 |2| short release cycles|https://github.com/aakriti0fnu/cheapBuy/graphs/contributors|
 |2| workload is spread over the whole team (so one team member is often Xtimes more productive than the others)|https://github.com/aakriti0fnu/cheapBuy/graphs/contributors|
