@@ -1,26 +1,54 @@
+
+from difflib import SequenceMatcher
+
+import bs4
 import requests
+from typing import NamedTuple
+import urllib.parse
 from bs4 import BeautifulSoup
 
 
-def get_url_amazon(search_term):
-    try:
+class NoProductsFoundError(Exception):
+    def __init__(self, message="No matching products found"):
+        self.message = message
+        super().__init__(self.message)
 
-        print(search_term)
-        modified_search_term = search_term.replace(' ', '+')
-        modified_search_term = modified_search_term.replace(',', '%2C')
-        template = F"https://www.amazon.com/s?k={modified_search_term}%2C114&ref=nb_sb_noss"
-    
-    except:
-        print("here")
-        template = ''
+
+def get_url_amazon(search_term: NamedTuple) -> str:
+    """
+    Parameters
+    ----------
+    search_term: NamedTuple
+        NamedTuple named Description, contains product title and price
+
+    Returns
+    -------
+    template : str
+        amazon search url for the selected product
+    """
+    modified_search_term = urllib.parse.quote(str(search_term.title))
+    template = F"https://www.amazon.com/s?k={modified_search_term}&ref=nb_sb_noss"
     print(f"Constructed amazon URL: \n {template}")
     return template
 
 
+def scrap_amazon(search_term: NamedTuple) -> bs4.element.ResultSet or None:
+    """
+    Parameters
+    ----------
+    search_term: NamedTuple
+        NamedTuple named Description, contains product title and price
 
+    Returns
+    -------
+    results : bs4.element.ResultSet
+        BeautifulSoup ResultSet containing the list of matching products
 
-def scrap_amazon(search_term):
-    results = []
+    Raises
+    ------
+    ConnectionRefusedError
+        when website does not allow scraping
+    """
     try:
         url = get_url_amazon(search_term)
         # driver.get(url)
@@ -33,31 +61,85 @@ def scrap_amazon(search_term):
                    'Connection': 'keep-alive',
                    'Upgrade-Insecure-Requests': '1', 'TE': 'Trailers'}
         page = requests.get(url, headers=headers)
-        print(page.status_code)
-        soup = BeautifulSoup(page.content, 'lxml')
-        results = soup.find_all('div', {'data-component-type': 's-search-result'})
-    except:
-        results = []
-    return results
+        if page.status_code == 200:
+            soup = BeautifulSoup(page.content, 'lxml')
+            results = soup.find_all('div', {'data-component-type': 's-search-result'})
+            return results
+        else:
+            raise ConnectionRefusedError(F"{page.status_code}: Unable to scrape the website")
+    except Exception as e:
+        print(e)
+        return None
 
 
-def extract_item_amazon(search_term):
+def find_best_matching_product(search_term: NamedTuple, results: bs4.element.ResultSet) -> bs4.element.Tag:
+    """
+    The method tries to find the best matching product on amazon using longest sequence matching method
+    Amazon usually places sponsored products at the beginning of search results, to circumvent this given
+    product title is matched with amazon's result set, result with longest match is returned
+
+    Parameters
+    ----------
+    search_term: NamedTuple
+        NamedTuple named Description, contains product title and price
+
+    results: bs4.element.ResultSet
+        BeautifulSoup ResultSet containing the list of matching products
+
+    Returns
+    -------
+    best_match_product: bs4.element.Tag
+        BeautifulSoup element tag which contains product title, price, url
+    """
+    max_match_len = 0
+    best_match_product = ''
+    for result in results:
+        sponsored = result.find("span", attrs={"class": "s-label-popover-hover"})
+        if sponsored:
+            continue
+        else:
+            desc = result.find("span", attrs={"class": "a-size-medium a-color-base a-text-normal"})
+            if desc is not None:
+                title = desc.text.strip()
+                str_1 = search_term.title
+                seq_match = SequenceMatcher(None, str_1, title)
+                match = seq_match.find_longest_match(0, len(str_1), 0, len(title))
+                if match.size > max_match_len:
+                    max_match_len = match.size
+                    best_match_product = result
+    return best_match_product
+
+
+def extract_item_amazon(search_term: NamedTuple) -> dict:
+    """
+    Parameters
+    ----------
+    search_term: NamedTuple
+        NamedTuple named Description, contains product title and price
+
+    Returns
+    -------
+    result : dict
+        dictionary containing product title, url, price, website
+    """
     result = {}
     try:
         results = scrap_amazon(search_term)
-        if len(results) == 0:
-            print(f'For search_term: {search_term}, \n No item found scrapping Amazon.')
-            return result
-        print(f'Found {len(results)} items on the amazon, picking the 1st one.')
-        item = results[0]
-        atag = item.h2.a
-        result['description'] = atag.text.strip()
-        result['url'] = 'https://www.amazon.com' + atag.get('href')
-        price_parent = item.find('span', 'a-price')
-        item_price = price_parent.find('span', 'a-offscreen').text.strip('$')
-        print(f'Amazon {search_term} price : {item_price}')
-        result['price'] = item_price
-        result['site'] = 'amazon'
-    except:
-        print('Scraping failed for amazon')
-
+        if results is not None:
+            if len(results) != 0:
+                print(f'Found {len(results)} items on the amazon, picking the nearest matching one.')
+                item = find_best_matching_product(search_term, results)
+                result['description'] = item.find("span", attrs={"class": "a-size-medium a-color-base a-text-normal"}).text
+                item_link = item.find(class_="a-link-normal s-underline-text s-underline-link-text a-text-normal", href=True)
+                result['url'] = F"https://www.amazon.com/{item_link}"
+                result['price'] = item.find('span', {"class": "a-offscreen"}).text.strip('$')
+                result['site'] = 'amazon'
+                print(result)
+                return result
+            else:
+                raise NoProductsFoundError
+        else:
+            raise Exception("Scraping failed on Amazon")
+    except Exception as e:
+        print(e)
+        return result

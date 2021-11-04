@@ -1,20 +1,27 @@
+import requests
+import urllib.parse
 from bs4 import BeautifulSoup
 
 
 def get_url_costco(search_term):
     """
+    Parameters
+    ----------
+    search_term: NamedTuple
+        NamedTuple named Description, contains product title and price
 
-    :param search_term:
-    :return:
+    Returns
+    -------
+    template : str
+        amazon search url for the selected product
     """
-    domain_name = "https://www.costco.com/"
-    amended_search_term = "%20".join(search_term.split(" "))
-    url = f"{domain_name}/CatalogSearch?dept=All&keyword={amended_search_term}"
+    modified_search_term = urllib.parse.quote(str(search_term.title))
+    url = F"https://www.costco.com/CatalogSearch?dept=All&keyword={modified_search_term}"
     print(f"Constructed Costco's URL: \n {url}")
     return url
 
 
-def scrap_costco(driver, search_term):
+def scrap_costco(search_term):
     """
 
     :param driver:
@@ -24,8 +31,8 @@ def scrap_costco(driver, search_term):
     results = []
     try:
         url = get_url_costco(search_term)
-        driver.get(url)
-        soup = BeautifulSoup(driver.page_source, "html.parser")
+        page = requests.get(url)
+        soup = BeautifulSoup(page.content, "html.parser")
         with open(
             "/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html",
             "w",
@@ -38,7 +45,7 @@ def scrap_costco(driver, search_term):
     return results
 
 
-def extract_item_costco(driver, search_term):
+def extract_item_costco(search_term):
     """
 
     :param driver:
@@ -47,7 +54,7 @@ def extract_item_costco(driver, search_term):
     """
     result = {}
     try:
-        results = scrap_costco(driver, search_term)
+        results = scrap_costco(search_term)
         if len(results) == 0:
             print(
                 f"For search_term: {search_term}, \n No item found scrapping Costco.")
