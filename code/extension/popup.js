@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = { active: true, currentWindow: true };
 
     chrome.tabs.query(query, async (tabs) => {
-              
+        chrome.browserAction.setBadgeBackgroundColor({ color: '#00FF00' }, () => {
+            chrome.browserAction.setBadgeText({ text: '!' });
+        });
         var headers = {}
         // console.log("***** Item Search Started on source site! *****")
         const response = await fetch('http://127.0.0.1:8080/scrap?link='+tabs[0].url, {
@@ -13,16 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // console.log("***** Item Search ended on source site! *****")
         myJson = await response.json()
         console.log(myJson)
-       if (isEmpty(myJson)){
-        chrome.browserAction.setBadgeBackgroundColor({ color: '#F00' }, () => {
-            chrome.browserAction.setBadgeText({ text: ''});
-        });
-       }
-       else{
-        chrome.browserAction.setBadgeBackgroundColor({ color: '#F00' }, () => {
-            chrome.browserAction.setBadgeText({ text: '!'});
-        });
-       }
+     
         var web_response = ''
        
         for(let i=0;i<myJson['url'].length;i++){
@@ -30,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
         chrome.browserAction.setBadgeBackgroundColor({ color: '#00FF00' }, () => {
-            chrome.browserAction.setBadgeText({ text: myJson.length });
+            chrome.browserAction.setBadgeText({ text: '' });
         });
         dialogBox.innerHTML = web_response;
     });
