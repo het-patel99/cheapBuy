@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>web.scraper.fetch_description package &mdash; cheapBuy 2.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="web.scraper.scrap package" href="web.scraper.scrap.html" />
+    <link rel="prev" title="web.scraper package" href="web.scraper.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> cheapBuy
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">code</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="web.html">web package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="web.scraper.html">web.scraper package</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">web.scraper.fetch_description package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="web.scraper.scrap.html">web.scraper.scrap package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="web.scraper.html#module-web.scraper.web_scraper">web.scraper.web_scraper module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="web.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="web.html#module-web.server_api">web.server_api module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">cheapBuy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">code</a> &raquo;</li>
+          <li><a href="web.html">web package</a> &raquo;</li>
+          <li><a href="web.scraper.html">web.scraper package</a> &raquo;</li>
+      <li>web.scraper.fetch_description package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/web.scraper.fetch_description.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-web.scraper.fetch_description.amazon">
+<span id="web-scraper-fetch-description-package"></span><h1>web.scraper.fetch_description package<a class="headerlink" href="#module-web.scraper.fetch_description.amazon" title="Permalink to this headline"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="web.scraper.fetch_description.amazon.description_from_url_amazon">
+<span class="sig-prename descclassname"><span class="pre">web.scraper.fetch_description.amazon.</span></span><span class="sig-name descname"><span class="pre">description_from_url_amazon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">NamedTuple</span></span></span><a class="reference internal" href="_modules/web/scraper/fetch_description/amazon.html#description_from_url_amazon"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#web.scraper.fetch_description.amazon.description_from_url_amazon" title="Permalink to this definition"></a></dt>
+<dd><p>Returns product title and price by scraping</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>link</strong> (<em>str</em>) – website url</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>description</strong> – NamedTuple named Description, contains product title and price</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>NamedTuple</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ConnectionRefusedError</strong> – when website does not allow scraping</p>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="module-web.scraper.fetch_description.bjs">
+<span id="web-scraper-fetch-description-bjs-module"></span><h2>web.scraper.fetch_description.bjs module<a class="headerlink" href="#module-web.scraper.fetch_description.bjs" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="web.scraper.fetch_description.bjs.description_from_url_bjs">
+<span class="sig-prename descclassname"><span class="pre">web.scraper.fetch_description.bjs.</span></span><span class="sig-name descname"><span class="pre">description_from_url_bjs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/web/scraper/fetch_description/bjs.html#description_from_url_bjs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#web.scraper.fetch_description.bjs.description_from_url_bjs" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>link</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-web.scraper.fetch_description.costco">
+<span id="web-scraper-fetch-description-costco-module"></span><h2>web.scraper.fetch_description.costco module<a class="headerlink" href="#module-web.scraper.fetch_description.costco" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="web.scraper.fetch_description.costco.description_from_url_costco">
+<span class="sig-prename descclassname"><span class="pre">web.scraper.fetch_description.costco.</span></span><span class="sig-name descname"><span class="pre">description_from_url_costco</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">chrome</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">link</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/web/scraper/fetch_description/costco.html#description_from_url_costco"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#web.scraper.fetch_description.costco.description_from_url_costco" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>link</strong> (<em>str</em>) – website url</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>description</strong> – NamedTuple named Description, contains product title and price</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>NamedTuple</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ConnectionRefusedError</strong> – when website does not allow scraping</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-web.scraper.fetch_description.ebay">
+<span id="web-scraper-fetch-description-ebay-module"></span><h2>web.scraper.fetch_description.ebay module<a class="headerlink" href="#module-web.scraper.fetch_description.ebay" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="web.scraper.fetch_description.ebay.description_from_url_ebay">
+<span class="sig-prename descclassname"><span class="pre">web.scraper.fetch_description.ebay.</span></span><span class="sig-name descname"><span class="pre">description_from_url_ebay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">NamedTuple</span></span></span><a class="reference internal" href="_modules/web/scraper/fetch_description/ebay.html#description_from_url_ebay"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#web.scraper.fetch_description.ebay.description_from_url_ebay" title="Permalink to this definition"></a></dt>
+<dd><p>Returns product title and price by scraping
+:param link: website url
+:type link: str</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><strong>description</strong> – NamedTuple named Description, contains product title and price</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>NamedTuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-web.scraper.fetch_description.walmart">
+<span id="web-scraper-fetch-description-walmart-module"></span><h2>web.scraper.fetch_description.walmart module<a class="headerlink" href="#module-web.scraper.fetch_description.walmart" title="Permalink to this headline"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="web.scraper.fetch_description.walmart.description_from_url_walmart">
+<span class="sig-prename descclassname"><span class="pre">web.scraper.fetch_description.walmart.</span></span><span class="sig-name descname"><span class="pre">description_from_url_walmart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">link</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/web/scraper/fetch_description/walmart.html#description_from_url_walmart"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#web.scraper.fetch_description.walmart.description_from_url_walmart" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>link</strong> – </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="web.scraper.html" class="btn btn-neutral float-left" title="web.scraper package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="web.scraper.scrap.html" class="btn btn-neutral float-right" title="web.scraper.scrap package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021, Sharath Kumar, Jainam Shah, Ashwin Kumar Muniswamy, Aakriti.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

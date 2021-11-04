@@ -1,0 +1,43 @@
+web.scraper.scrap package
+=========================
+
+web.scraper.scrap.amazon module
+-------------------------------
+
+.. automodule:: web.scraper.scrap.amazon
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.scrap.bjs module
+----------------------------
+
+.. automodule:: web.scraper.scrap.bjs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.scrap.costco module
+-------------------------------
+
+.. automodule:: web.scraper.scrap.costco
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.scrap.ebay module
+-----------------------------
+
+.. automodule:: web.scraper.scrap.ebay
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.scrap.walmart module
+--------------------------------
+
+.. automodule:: web.scraper.scrap.walmart
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

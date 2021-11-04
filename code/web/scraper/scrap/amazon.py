@@ -1,6 +1,6 @@
 
 from difflib import SequenceMatcher
-
+from collections import namedtuple
 import bs4
 import requests
 from typing import NamedTuple
@@ -16,6 +16,8 @@ class NoProductsFoundError(Exception):
 
 def get_url_amazon(search_term: NamedTuple) -> str:
     """
+    Returns an amazon search url, which is built using product description like title and price
+
     Parameters
     ----------
     search_term: NamedTuple
@@ -34,6 +36,8 @@ def get_url_amazon(search_term: NamedTuple) -> str:
 
 def scrap_amazon(search_term: NamedTuple) -> bs4.element.ResultSet or None:
     """
+    Returns search results obtained for the search url generated in ``get_url_amazon``
+
     Parameters
     ----------
     search_term: NamedTuple
@@ -112,6 +116,8 @@ def find_best_matching_product(search_term: NamedTuple, results: bs4.element.Res
 
 def extract_item_amazon(search_term: NamedTuple) -> dict:
     """
+    Returns a dictionary containing product title, price, url and website
+
     Parameters
     ----------
     search_term: NamedTuple
@@ -143,3 +149,4 @@ def extract_item_amazon(search_term: NamedTuple) -> dict:
     except Exception as e:
         print(e)
         return result
+

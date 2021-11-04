@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 
 def description_from_url_amazon(link: str) -> NamedTuple:
     """
+    Returns product title and price by scraping
+
     Parameters
     ----------
     link : str
@@ -25,7 +27,6 @@ def description_from_url_amazon(link: str) -> NamedTuple:
         headers = {'Host': 'www.amazon.com',
                    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) '
                                  'Chrome/44.0.2403.157 Safari/537.36',
-                   'Accept-Language': 'en-US, en;q=0.5',
                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
                    'Accept-Language': 'en-US,en;q=0.5', 'Accept-Encoding': 'gzip, deflate, br', 'Connection': 'keep-alive',
                    'Upgrade-Insecure-Requests': '1', 'TE': 'Trailers'}

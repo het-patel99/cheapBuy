@@ -13,7 +13,7 @@ def get_url_costco(search_term):
     Returns
     -------
     template : str
-        amazon search url for the selected product
+        costco search url for the selected product
     """
     modified_search_term = urllib.parse.quote(str(search_term.title))
     url = F"https://www.costco.com/CatalogSearch?dept=All&keyword={modified_search_term}"
@@ -33,14 +33,15 @@ def scrap_costco(search_term):
         url = get_url_costco(search_term)
         page = requests.get(url)
         soup = BeautifulSoup(page.content, "html.parser")
-        with open(
-            "/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html",
-            "w",
-        ) as fileptr:
-            fileptr.write(str(soup))
+        # with open(
+        #     "/Users/anubhavchaudhary/Downloads/github/repos/cheapBuy/data/costco.html",
+        #     "w",
+        # ) as fileptr:
+        #     fileptr.write(str(soup))
         results = soup.find_all("div", {"class": "product-tile-set"})
 
-    except:
+    except Exception as e:
+        print(e)
         results = []
     return results
 
@@ -68,7 +69,7 @@ def extract_item_costco(search_term):
             item.find("div", {"class": "price"}).get_text().strip().strip("$")
         )
         result["site"] = "Costco"
-    except:
-        print("Scraping failed for Costco")
+    except Exception as e:
+        print(F"Scraping failed for Costco due to: {e}")
         result = {}
     return result

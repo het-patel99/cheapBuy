@@ -1,0 +1,18 @@
+web.scraper package
+===================
+
+.. toctree::
+   :maxdepth: 4
+
+   web.scraper.fetch_description
+   web.scraper.scrap
+
+
+web.scraper.web\_scraper module
+-------------------------------
+
+.. automodule:: web.scraper.web_scraper
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

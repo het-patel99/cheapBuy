@@ -30,24 +30,24 @@ def get_driver():
     chrome_browser = webdriver.Chrome(
         options=option, executable_path=ChromeDriverManager().install()
     )
+    #
+    # # Firefox
+    # useragent = "Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
+    #
+    # profile = webdriver.FirefoxProfile()
+    # profile.set_preference("general.useragent.override", useragent)
+    # options = webdriver.FirefoxOptions()
+    # options.set_preference("dom.webnotifications.serviceworker.enabled", False)
+    # options.set_preference("dom.webnotifications.enabled", False)
+    # options.add_argument("--headless")
+    # firefox_browser = webdriver.Firefox(
+    #     firefox_profile=profile,
+    #     options=options,
+    #     executable_path=GeckoDriverManager().install(),
+    # )
 
-    # Firefox
-    useragent = "Mozilla/5.0 (Linux; Android 8.0.0; Pixel 2 XL Build/OPD1.170816.004) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Mobile Safari/537.36"
-
-    profile = webdriver.FirefoxProfile()
-    profile.set_preference("general.useragent.override", useragent)
-    options = webdriver.FirefoxOptions()
-    options.set_preference("dom.webnotifications.serviceworker.enabled", False)
-    options.set_preference("dom.webnotifications.enabled", False)
-    options.add_argument("--headless")
-    firefox_browser = webdriver.Firefox(
-        firefox_profile=profile,
-        options=options,
-        executable_path=GeckoDriverManager().install(),
-    )
-
-    return chrome_browser, firefox_browser
-
+    # return chrome_browser, firefox_browser
+    return chrome_browser
 
 def get_agent():
     agent = {
@@ -72,6 +72,8 @@ def set_results(to, from_):
 
 def search_amazon(description: NamedTuple, results: dict) -> dict:
     """
+    Searches amazon website for relevant product and returns product description like title, price, url
+
     Parameters
     ----------
     description: NamedTuple
@@ -137,19 +139,24 @@ def search_costco(description, results):
     pass
 
 
-def search_ebay(description: NamedTuple, results):
+def search_ebay(description: NamedTuple, results: dict) -> dict:
     """
+    Searches ebay website for relevant product and returns product description like title, price, url
+
     Parameters
     ----------
     description: NamedTuple
         NamedTuple named Description, contains product title and price
 
+    results: dict
+        dictionary holder space for product details
+
     Returns
     -------
-
+    results: dict
+        dictionary containing product details
     """
     print(" Searching on ebay ".center(40, '$'))
-    # result_dict_ebay = extract_item_ebay(driver, description)
     result_dict_ebay = extract_item_ebay(description)
     if result_dict_ebay != {}:
         print(f"Ebay price: {result_dict_ebay['price']}")
@@ -173,19 +180,20 @@ def scraper(link: str) -> dict:
     """
     print(" User request started ".center(80, '*'))
 
-    chrome, firefox = get_driver()
+    # chrome, firefox = get_driver()
+    chrome = get_driver()
     results = {"url": [], "description": [], "price": [], "site": []}
 
     if "amazon.com" in link:
         print(f"User is on amazon with URL: {link}")
         description = description_from_url_amazon(link)
         if description:
-            # print(F"Let's search for item: {description.title} price: {description.price} on Ebay, costco, bjs, walmart")
             # searching item!
             results = search_ebay(description, results)
-            results = search_costco(description, results)
-            search_bjs(chrome, description, results)
-            search_walmart(chrome, description, results)
+            # search_costco(chrome, description, results)
+            # results = search_costco(description, results)
+            # search_bjs(chrome, description, results)
+            # search_walmart(chrome, description, results)
             return results
         else:
             return ""
@@ -194,7 +202,6 @@ def scraper(link: str) -> dict:
         print(f"User is on Ebay with URL: \n {link}")
         description = description_from_url_ebay(link)
         if description:
-            # print(f"***** Let's search >>{description}<< \n on amazon, costco, bjs, walmart *****")
             # searching item!
             results = search_amazon(description, results)
             search_costco(chrome, description, results)
@@ -222,7 +229,7 @@ def scraper(link: str) -> dict:
 
     if "costco.com" in link:
         print(f"User is on Costco with URL: \n {link}")
-        description = description_from_url_costco(link)
+        description = description_from_url_costco(chrome, link)
         if description:
             print(
                 f"***** Let's search >>{description}<< \n on amazon, ebay, bjs, walmart *****"
@@ -245,7 +252,7 @@ def scraper(link: str) -> dict:
             )
             # searching item!
             results = search_amazon(description, results)
-            results = search_ebay(chrome, description, results)
+            results = search_ebay(description, results)
             search_costco(chrome, description, results)
             search_walmart(chrome, description, results)
             return results

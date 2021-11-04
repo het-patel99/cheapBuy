@@ -13,6 +13,8 @@ class NoProductsFoundError(Exception):
 
 def get_url_ebay(search_term: NamedTuple) -> str:
     """
+    Returns an ebay search url, which is built using product description like title and price
+
     Parameters
     ----------
     search_term: NamedTuple
@@ -32,6 +34,8 @@ def get_url_ebay(search_term: NamedTuple) -> str:
 
 def scrap_ebay(search_term: NamedTuple) -> bs4.element.ResultSet:
     """
+    Returns search results obtained for the search url generated in ``get_url_ebay``
+
     Parameters
     ----------
     search_term: NamedTuple
@@ -64,6 +68,8 @@ def scrap_ebay(search_term: NamedTuple) -> bs4.element.ResultSet:
 
 def extract_item_ebay(search_term: NamedTuple) -> dict:
     """
+    Returns a dictionary containing product title, price, url and website
+
     Parameters
     ----------
     search_term: NamedTuple

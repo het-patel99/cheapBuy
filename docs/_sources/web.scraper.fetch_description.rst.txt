@@ -1,0 +1,40 @@
+web.scraper.fetch\_description package
+======================================
+
+.. automodule:: web.scraper.fetch_description.amazon
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.fetch\_description.bjs module
+-----------------------------------------
+
+.. automodule:: web.scraper.fetch_description.bjs
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.fetch\_description.costco module
+--------------------------------------------
+
+.. automodule:: web.scraper.fetch_description.costco
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.fetch\_description.ebay module
+------------------------------------------
+
+.. automodule:: web.scraper.fetch_description.ebay
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+web.scraper.fetch\_description.walmart module
+---------------------------------------------
+
+.. automodule:: web.scraper.fetch_description.walmart
+   :members:
+   :undoc-members:
+   :show-inheritance:
+

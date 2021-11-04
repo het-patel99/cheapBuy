@@ -4,8 +4,9 @@ from typing import NamedTuple
 from bs4 import BeautifulSoup
 
 
-def description_from_url_ebay(link):
+def description_from_url_ebay(link: str) -> NamedTuple:
     """
+    Returns product title and price by scraping
     Parameters
     ----------
     link : str
@@ -36,4 +37,3 @@ def description_from_url_ebay(link):
     except Exception as e:
         print(e)
         return None
-

@@ -1,0 +1,21 @@
+web package
+===========
+
+.. toctree::
+   :maxdepth: 4
+
+   web.scraper
+
+Submodules
+----------
+
+web.server\_api module
+----------------------
+
+.. automodule:: web.server_api
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. literalinclude:: ..\code\webserver_api.py
+    :language: python
