@@ -21,4 +21,3 @@
 |2|test cases:.a large proportion of the issues related to handling failing cases |Each test accounts for failing scenarios|
 |2|test cases are routinely executed |on push or pull requests, tests are run |
 |3|Documentation describing how this version improves on the older version||
-||This version is a little(1), some(2), much(3) improved on the last version|Tutor's assessment| 
